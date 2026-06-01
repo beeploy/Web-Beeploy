@@ -1,14 +1,15 @@
 import Link from "next/link";
+import { ReactNode, JSX } from "react";
 
 type ButtonLinkProps = {
   href: string;
-  children: React.ReactNode;
+  children: ReactNode;
   variant?: "dark" | "gold" | "light";
   target?: string;
   rel?: string;
 };
 
-const variants = {
+const variants: Record<"dark" | "gold" | "light", string> = {
   dark: "bg-text-main text-white hover:bg-golden-hover hover:text-text-main",
   gold: "bg-golden-pollen text-text-main hover:bg-golden-hover",
   light: "bg-white text-text-main hover:bg-golden-pollen",
@@ -20,7 +21,7 @@ export function ButtonLink({
   variant = "dark",
   target,
   rel,
-}: ButtonLinkProps) {
+}: ButtonLinkProps): JSX.Element {
   return (
     <Link
       href={href}

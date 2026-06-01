@@ -1,4 +1,6 @@
-export function BeeployBeePlaceholder() {
+import { JSX } from "react";
+
+export function BeeployBeePlaceholder(): JSX.Element {
   return (
     <figure className="relative mx-auto max-w-sm">
       <div className="hexagon mx-auto grid aspect-square w-64 place-items-center bg-golden-pollen p-7 shadow-soft">

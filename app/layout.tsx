@@ -3,6 +3,7 @@ import { Inter, Rubik } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { ReactNode, JSX } from "react";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -18,25 +19,20 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://beeploy.com"),
-  title: {
-    default: "Beeploy | Tecnología para hacer crecer tu empresa",
-    template: "%s | Beeploy",
-  },
-  description:
-    "Beeploy crea apps, webs, sistemas, ciberseguridad y soluciones de Datos e IA para que empresas en Ecuador y Latam vendan mas, reduzcan riesgos y decidan mejor.",
-  icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
-  },
+  title: "Beeploy | Tecnología de élite para hacer crecer tu empresa",
+  description: "Desarrollo a la medida, automatizaciones con IA y ciberseguridad corporativa. Construimos sistemas que escalan operaciones y protegen tu información.",
   openGraph: {
-    title: "Beeploy | Tecnología para hacer crecer tu empresa",
-    description:
-      "Casa ecuatoriana de desarrollo de software: ciberseguridad, datos y soluciones a medida con proposito social.",
-    url: "https://beeploy.com",
+    title: "Beeploy | Tecnología de Élite",
+    description: "Sistemas a la medida, IA y Ciberseguridad para empresas.",
+    url: "https://beeploy.com", 
     siteName: "Beeploy",
     locale: "es_EC",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Beeploy | Tecnología de Élite",
+    description: "Sistemas a la medida, IA y Ciberseguridad para empresas.",
   },
   robots: {
     index: true,
@@ -47,8 +43,8 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
-}>) {
+  children: ReactNode;
+}>): JSX.Element {
   return (
     <html lang="es" className={`${rubik.variable} ${inter.variable}`}>
       <body className="bg-background font-body text-text-main antialiased">

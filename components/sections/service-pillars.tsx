@@ -1,6 +1,13 @@
 import { SectionShell } from "@/components/ui/section-shell";
+import { JSX } from "react";
 
-const services = [
+type Service = {
+  title: string;
+  body: string;
+  proof: string;
+};
+
+const services: Service[] = [
   {
     title: "Desarrollo a la Medida",
     body: "Creamos la App, Web o Sistema que tu negocio necesita para vender, operar mejor y dejar de depender de procesos manuales.",
@@ -18,7 +25,7 @@ const services = [
   },
 ];
 
-export function ServicePillars() {
+export function ServicePillars(): JSX.Element {
   return (
     <SectionShell
       className="honeycomb-bg"

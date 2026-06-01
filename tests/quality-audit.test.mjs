@@ -53,8 +53,6 @@ test("global CSS includes keyboard focus, skip link, and reduced motion support"
 });
 
 test("base routes exist for servicios, nosotros, and cameyapp", () => {
-  const layout = file("app/layout.tsx");
-
   for (const route of ["servicios", "nosotros", "cameyapp"]) {
     assert.ok(statSync(join(root, "app", route, "page.tsx")).isFile());
   }

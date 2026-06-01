@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BeeployMark } from "@/components/brand/beeploy-mark";
+import { JSX } from "react";
 
 const navItems = [
   { href: "/", label: "Inicio" },
@@ -8,7 +9,7 @@ const navItems = [
   { href: "/nosotros", label: "Nosotros" },
 ];
 
-export function SiteHeader() {
+export function SiteHeader(): JSX.Element {
   return (
     <header className="sticky top-0 z-40 border-b border-text-main/10 bg-surface/92 backdrop-blur">
       <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-4 px-6">
