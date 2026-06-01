@@ -11,17 +11,16 @@ export function PurposeBridge() {
               Puente a Cameyapp
             </p>
             <h2 className="mt-4 max-w-3xl text-balance font-heading text-4xl font-black leading-tight sm:text-5xl">
-              Tu proyecto también ayuda a construir trabajo digno en Latam.
+              Tu proyecto también ayuda a construir trabajo digno en Latinoamérica.
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/78">
               Cada app, web, sistema o solución de datos que construimos en
               Beeploy impulsa Cameyapp: una plataforma para conectar personas
-              con oportunidades reales. La Abejita Beeploy será la guía humana
-              de ese camino.
+              con oportunidades reales.
             </p>
             <div className="mt-8">
               <ButtonLink href="/cameyapp" variant="gold">
-                Conocer Cameyapp
+                Conoce Cameyapp
               </ButtonLink>
             </div>
           </div>

@@ -164,9 +164,10 @@ export default function ServiciosPage() {
 
       {/* ── Sección 1: Desarrollo a la Medida ────────────── */}
       <SectionShell
+        id="desarrollo"
         eyebrow="Desarrollo a la Medida"
         title="El sistema que necesitas, no el que te sobre-venden."
-        className="bg-surface"
+        className="bg-surface scroll-mt-24"
       >
         <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-16">
 
@@ -216,7 +217,7 @@ export default function ServiciosPage() {
       </SectionShell>
 
       {/* ── Sección 2: Ciberseguridad (franja oscura) ──────── */}
-      <section className="dark-technical-grid bg-text-main px-6 py-20 sm:py-28">
+      <section id="ciberseguridad" className="dark-technical-grid bg-text-main px-6 py-20 sm:py-28 scroll-mt-24">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-white/50">
@@ -262,10 +263,11 @@ export default function ServiciosPage() {
 
       {/* ── Sección 3: Marketing y Branding — Pricing ──────── */}
       <SectionShell
+        id="datos-ia"
         eyebrow="Marketing y Branding"
         title="Publicar sin estrategia es gritar en el desierto."
         intro="Cada plan incluye gestión profesional, diseño gráfico y reportes claros para que sepas exactamente qué resultado está generando tu inversión."
-        className="honeycomb-bg"
+        className="honeycomb-bg scroll-mt-24"
       >
         <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
           {marketingPlans.map((plan) => (

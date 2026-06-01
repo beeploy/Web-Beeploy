@@ -24,8 +24,8 @@ export function Hero() {
       </div>
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1fr_0.92fr]">
         <div className="relative z-10 max-w-3xl">
-          <p className="mb-5 inline-flex rounded-full border border-golden-pollen bg-golden-pollen px-4 py-2 text-sm font-black text-text-main shadow-sm">
-            La Colmena Tech de Beeploy
+          <p className="mb-6 inline-block rounded-full border border-text-main/10 bg-transparent px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-text-muted cursor-default">
+            La Colmena de la Tecnología
           </p>
           <h1 className="text-balance font-heading text-5xl font-black leading-[1.02] text-text-main sm:text-6xl lg:text-7xl">
             Tecnología de élite para hacer crecer tu empresa.
@@ -35,17 +35,12 @@ export function Hero() {
             tu información y ordenamos tus datos para que vendas más, pierdas
             menos tiempo y tomes decisiones rentables.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink
-              href="https://wa.me/593997963617?text=Hola%20equipo%20de%20Beeploy.%20Quiero%20escalar%20mi%20empresa%20y%20me%20gustar%C3%ADa%20agendar%20un%20diagn%C3%B3stico%20tecnol%C3%B3gico."
-              variant="gold"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Agendar diagnóstico
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <ButtonLink href="/servicios" variant="gold">
+              Explorar servicios
             </ButtonLink>
-            <ButtonLink href="#servicios" variant="dark">
-              Ver soluciones
+            <ButtonLink href="/nosotros" variant="dark">
+              Conocer al equipo
             </ButtonLink>
           </div>
         </div>

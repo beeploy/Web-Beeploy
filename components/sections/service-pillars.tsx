@@ -1,10 +1,12 @@
 import { SectionShell } from "@/components/ui/section-shell";
 import { JSX } from "react";
+import Link from "next/link";
 
 type Service = {
   title: string;
   body: string;
   proof: string;
+  hrefId: string;
 };
 
 const services: Service[] = [
@@ -12,16 +14,19 @@ const services: Service[] = [
     title: "Desarrollo a la Medida",
     body: "Creamos la App, Web o Sistema que tu negocio necesita para vender, operar mejor y dejar de depender de procesos manuales.",
     proof: "Ideal para automatizar ventas, reservas, inventario, clientes o reportes internos.",
+    hrefId: "desarrollo",
   },
   {
     title: "Ciberseguridad",
     body: "Protegemos a tu empresa de hackeos y fugas de información antes de que un incidente te cueste dinero, reputación o clientes.",
     proof: "Ideal para empresas que manejan clientes, pagos, accesos o información sensible.",
+    hrefId: "ciberseguridad",
   },
   {
     title: "Datos e IA",
     body: "Organizamos tu información para que tomes decisiones rentables con tableros, indicadores y automatizaciones inteligentes.",
     proof: "Ideal para saber qué vender, dónde invertir y qué procesos están drenando margen.",
+    hrefId: "datos-ia",
   },
 ];
 
@@ -31,7 +36,7 @@ export function ServicePillars(): JSX.Element {
       className="honeycomb-bg"
       eyebrow="Servicios"
       title="Soluciones que un dueño de negocio entiende desde el primer minuto."
-      intro="No vendemos código: vendemos crecimiento, protección y claridad para que tu empresa opere mejor."
+      intro="No vendemos código. Vendemos crecimiento, protección y claridad para que tu empresa opere mejor."
     >
       <div id="servicios" className="mt-10 grid gap-6 lg:grid-cols-3">
         {services.map((service, index) => (
@@ -57,14 +62,12 @@ export function ServicePillars(): JSX.Element {
               </p>
             </div>
             
-            <a
-              href={`https://wa.me/593997963617?text=${encodeURIComponent(`Hola Beeploy, me interesa el servicio de ${service.title}`)}`}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href={`/servicios#${service.hrefId}`}
               className="mx-auto mt-10 inline-flex min-h-12 w-4/5 items-center justify-center rounded-full bg-golden-pollen px-6 py-3 text-sm font-black text-text-main transition hover:bg-golden-hover"
             >
               Quiero esta solución
-            </a>
+            </Link>
           </article>
         ))}
       </div>

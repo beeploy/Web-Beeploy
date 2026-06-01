@@ -35,7 +35,7 @@ export function SiteHeader(): JSX.Element {
 
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out bg-white/80 backdrop-blur-md border-b border-text-main/10 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out bg-white/90 backdrop-blur-sm border-b border-text-main/10 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -43,12 +43,12 @@ export function SiteHeader(): JSX.Element {
         <Link href="/" aria-label="Ir al inicio de Beeploy">
           <BeeployMark />
         </Link>
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Principal">
+        <nav className="hidden items-center gap-x-8 md:flex" aria-label="Principal">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-semibold text-text-muted transition hover:text-text-main"
+              className="text-base font-semibold text-neutral-900 hover:text-yellow-600 transition-colors duration-200 px-2 py-1"
             >
               {item.label}
             </Link>

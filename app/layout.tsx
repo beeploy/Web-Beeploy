@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Beeploy",
     images: [
       {
-        url: "/banner-beeploy.png", 
+        url: "/banner-beeploy.png",
         width: 1200,
         height: 630,
         alt: "Beeploy Banner Corporativo",
@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     ],
     locale: "es_EC",
     type: "website",
+  },
+  icons: {
+    icon: '/favicon.png',
   },
   twitter: {
     card: "summary_large_image",
@@ -55,7 +58,7 @@ export default function RootLayout({
   children: ReactNode;
 }>): JSX.Element {
   return (
-    <html lang="es" className={`${rubik.variable} ${inter.variable}`}>
+    <html lang="es" className={`scroll-smooth ${rubik.variable} ${inter.variable}`}>
       <body className="bg-background font-body text-text-main antialiased">
         <a
           href="#contenido"

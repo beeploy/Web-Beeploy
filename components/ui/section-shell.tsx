@@ -1,4 +1,5 @@
 type SectionShellProps = {
+  id?: string;
   eyebrow?: string;
   title: string;
   intro?: string;
@@ -7,6 +8,7 @@ type SectionShellProps = {
 };
 
 export function SectionShell({
+  id,
   eyebrow,
   title,
   intro,
@@ -14,7 +16,7 @@ export function SectionShell({
   className = "",
 }: SectionShellProps) {
   return (
-    <section className={`px-6 py-20 sm:py-24 ${className}`}>
+    <section id={id} className={`px-6 py-20 sm:py-24 ${className}`}>
       <div className="mx-auto max-w-7xl">
         <div className="max-w-3xl">
           {eyebrow ? (
