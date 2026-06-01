@@ -60,11 +60,27 @@ a {
   background-size: 42px 42px;
 }
 
+.honeycomb-bg {
+  background-image:
+    url("data:image/svg+xml,%3Csvg width='96' height='84' viewBox='0 0 96 84' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 2h48l22 40-22 40H24L2 42 24 2Z' fill='none' stroke='%23FFCC33' stroke-opacity='.05' stroke-width='1'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, rgba(255, 204, 51, 0.04), rgba(248, 249, 250, 0));
+  background-position:
+    top right,
+    center;
+  background-size:
+    112px 98px,
+    auto;
+}
+
 .dark-technical-grid {
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
   background-size: 42px 42px;
+}
+
+.hexagon {
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);
 }
 
 @media (prefers-reduced-motion: reduce) {

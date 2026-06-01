@@ -1,7 +1,7 @@
 const items = [
-  "Arquitectura antes de improvisacion",
-  "Documentacion clara para decidir",
-  "Entrega tecnica con transferencia",
+  "Más ventas con mejores sistemas",
+  "Menos riesgos y fugas de información",
+  "Decisiones rentables con datos claros",
 ];
 
 export function TrustBar() {

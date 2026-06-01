@@ -52,6 +52,14 @@ test("global CSS includes keyboard focus, skip link, and reduced motion support"
   assert.match(css, /prefers-reduced-motion:\s*reduce/);
 });
 
+test("base routes exist for servicios, nosotros, and cameyapp", () => {
+  const layout = file("app/layout.tsx");
+
+  for (const route of ["servicios", "nosotros", "cameyapp"]) {
+    assert.ok(statSync(join(root, "app", route, "page.tsx")).isFile());
+  }
+});
+
 test("SEO metadata and structured data are present on the landing", () => {
   const layout = file("app/layout.tsx");
   const page = file("app/page.tsx");
@@ -73,17 +81,20 @@ test("performance keeps the first version server-rendered without client compone
   assert.doesNotMatch(sources, /["']use client["']/);
 });
 
-test("visual direction avoids literal bee and honey imagery in the landing", () => {
+test("visual direction uses modern honeycomb cues without honey product imagery", () => {
   const landingSources = [
     "app/page.tsx",
     ...sourceFiles("components/sections"),
-    "components/visuals/network-field.tsx",
+    "components/visuals/beeploy-bee-placeholder.tsx",
   ]
     .map(file)
     .join("\n")
     .toLowerCase();
 
-  for (const banned of ["panal", "miel", "tarro"]) {
+  assert.match(landingSources, /hex/);
+  assert.match(landingSources, /abejita beeploy/);
+
+  for (const banned of ["tarro", "frasco", "honey jar"]) {
     assert.doesNotMatch(landingSources, new RegExp(banned));
   }
 });

@@ -2,10 +2,10 @@ import Link from "next/link";
 import { BeeployMark } from "@/components/brand/beeploy-mark";
 
 const navItems = [
-  { href: "/catalogo", label: "Catalogo" },
+  { href: "/", label: "Inicio" },
   { href: "/servicios", label: "Servicios" },
+  { href: "/cameyapp", label: "Cameyapp" },
   { href: "/nosotros", label: "Nosotros" },
-  { href: "/contacto", label: "Contacto" },
 ];
 
 export function SiteHeader() {
@@ -26,12 +26,14 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <Link
-          href="/contacto"
-          className="inline-flex min-h-11 items-center rounded-xl bg-text-main px-4 py-2 text-sm font-bold text-white transition hover:bg-golden-hover hover:text-text-main"
+        <a
+          href="https://wa.me/593997963617?text=Hola%20equipo%20de%20Beeploy.%20Quiero%20escalar%20mi%20empresa%20y%20me%20gustar%C3%ADa%20agendar%20un%20diagn%C3%B3stico%20tecnol%C3%B3gico."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex min-h-11 items-center rounded-full bg-text-main px-4 py-2 text-sm font-bold text-white transition hover:bg-golden-hover hover:text-text-main"
         >
           Agendar diagnostico
-        </Link>
+        </a>
       </div>
     </header>
   );

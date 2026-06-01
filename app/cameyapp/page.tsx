@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CamellappPlaceholder } from "@/components/visuals/camellapp-placeholder";
+import { CameyappPlaceholder } from "@/components/visuals/cameyapp-placeholder";
 
 export const metadata: Metadata = {
-  title: "Camellapp en construccion",
+  title: "Cameyapp en construccion",
   description:
-    "El equipo de Beeploy esta construyendo Camellapp, una plataforma para devolver trabajo y dignidad en Latam.",
+    "El equipo de Beeploy esta construyendo Cameyapp, una plataforma para devolver trabajo y dignidad en Latam.",
   robots: {
     index: false,
     follow: true,
   },
 };
 
-export default function CamellappPage() {
+export default function CameyappPage() {
   return (
     <main
       id="contenido"
@@ -21,11 +21,11 @@ export default function CamellappPage() {
       <div className="technical-grid absolute inset-0 -z-10 opacity-70" />
       <section className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="rounded-xl border border-text-main/10 bg-surface p-4 shadow-soft">
-          <CamellappPlaceholder />
+          <CameyappPlaceholder />
         </div>
         <div>
           <p className="mb-4 inline-flex rounded-full border border-golden-pollen/60 bg-golden-pollen/20 px-4 py-2 text-sm font-semibold text-text-main">
-            Camellapp esta en obra
+            Cameyapp esta en obra
           </p>
           <h1 className="max-w-3xl font-heading text-4xl font-black leading-tight text-text-main sm:text-5xl lg:text-6xl">
             Nuestros arquitectos están construyendo el futuro del trabajo.
@@ -42,7 +42,7 @@ export default function CamellappPage() {
           </p>
           <Link
             href="/"
-            className="mt-8 inline-flex min-h-12 items-center rounded-xl bg-text-main px-6 py-3 text-sm font-bold text-white transition hover:bg-golden-hover hover:text-text-main focus-visible:outline-text-main"
+            className="mt-8 inline-flex min-h-12 items-center rounded-full bg-text-main px-6 py-3 text-sm font-bold text-white transition hover:bg-golden-hover hover:text-text-main focus-visible:outline-text-main"
           >
             Volver al Inicio
           </Link>

@@ -19,13 +19,18 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://beeploy.com"),
   title: {
-    default: "Beeploy | Arquitectura que cuida",
+    default: "Beeploy | Tecnología para hacer crecer tu empresa",
     template: "%s | Beeploy",
   },
   description:
-    "Beeploy construye ciberseguridad, datos y software a medida para organizaciones que necesitan rigor tecnico e impacto humano.",
+    "Beeploy crea apps, webs, sistemas, ciberseguridad y soluciones de Datos e IA para que empresas en Ecuador y Latam vendan mas, reduzcan riesgos y decidan mejor.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
   openGraph: {
-    title: "Beeploy | Arquitectura que cuida",
+    title: "Beeploy | Tecnología para hacer crecer tu empresa",
     description:
       "Casa ecuatoriana de desarrollo de software: ciberseguridad, datos y soluciones a medida con proposito social.",
     url: "https://beeploy.com",
@@ -49,7 +54,7 @@ export default function RootLayout({
       <body className="bg-background font-body text-text-main antialiased">
         <a
           href="#contenido"
-          className="skip-link rounded-xl bg-text-main px-4 py-3 text-sm font-semibold text-white shadow-soft"
+          className="skip-link rounded-full bg-text-main px-4 py-3 text-sm font-semibold text-white shadow-soft"
         >
           Saltar al contenido
         </a>

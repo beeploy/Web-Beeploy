@@ -2,20 +2,20 @@ import { SectionShell } from "@/components/ui/section-shell";
 
 const steps = [
   {
-    title: "Diagnosticar",
-    body: "Leemos riesgos, sistemas y restricciones antes de prometer una solucion.",
+    title: "Entendemos tu negocio",
+    body: "Revisamos cómo vendes, operas y pierdes tiempo antes de recomendar tecnología.",
   },
   {
-    title: "Diseñar",
-    body: "Convertimos incertidumbre en arquitectura, alcance y criterios de exito.",
+    title: "Definimos la ruta rentable",
+    body: "Priorizamos lo que genera ingresos, reduce costos o baja riesgos primero.",
   },
   {
-    title: "Construir",
-    body: "Entregamos en ciclos breves, con visibilidad y decisiones tecnicas explicadas.",
+    title: "Construimos y lanzamos",
+    body: "Creamos tu app, web, sistema o tablero con avances visibles y lenguaje claro.",
   },
   {
-    title: "Transferir",
-    body: "Documentamos, acompanamos y dejamos capacidades dentro del equipo.",
+    title: "Acompañamos el crecimiento",
+    body: "Te ayudamos a mejorar, medir y escalar después del lanzamiento.",
   },
 ];
 
@@ -23,9 +23,9 @@ export function MethodTimeline() {
   return (
     <SectionShell
       className="bg-surface"
-      eyebrow="Metodo"
-      title="La velocidad correcta empieza con una buena lectura del sistema."
-      intro="Nuestro trabajo combina precision arquitectonica y cuidado operativo: cada decision debe sostenerse frente al equipo tecnico y frente al negocio."
+      eyebrow="Método"
+      title="De la idea al retorno, sin marearte con tecnicismos."
+      intro="Beeploy traduce necesidades de negocio en soluciones digitales que se pueden vender, medir y mantener."
     >
       <ol className="mt-12 grid gap-5 lg:grid-cols-4">
         {steps.map((step, index) => (

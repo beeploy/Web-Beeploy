@@ -4,6 +4,8 @@ type ButtonLinkProps = {
   href: string;
   children: React.ReactNode;
   variant?: "dark" | "gold" | "light";
+  target?: string;
+  rel?: string;
 };
 
 const variants = {
@@ -16,11 +18,15 @@ export function ButtonLink({
   href,
   children,
   variant = "dark",
+  target,
+  rel,
 }: ButtonLinkProps) {
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-12 items-center justify-center rounded-xl px-6 py-3 text-sm font-bold transition ${variants[variant]}`}
+      target={target}
+      rel={rel}
+      className={`inline-flex min-h-12 items-center justify-center rounded-full px-7 py-3 text-sm font-bold transition ${variants[variant]}`}
     >
       {children}
     </Link>

@@ -2,10 +2,10 @@ import Link from "next/link";
 import { BeeployMark } from "@/components/brand/beeploy-mark";
 
 const footerLinks = [
+  { href: "/", label: "Inicio" },
   { href: "/servicios", label: "Servicios" },
-  { href: "/camellapp", label: "Camellapp" },
+  { href: "/cameyapp", label: "Cameyapp" },
   { href: "/nosotros", label: "Nosotros" },
-  { href: "/contacto", label: "Contacto" },
 ];
 
 export function SiteFooter() {

@@ -1,19 +1,19 @@
 import { SectionShell } from "@/components/ui/section-shell";
 
 const principles = [
-  "Rigor sin arrogancia.",
-  "Decisiones tecnicas explicables.",
-  "Documentacion que sirve despues de la entrega.",
-  "Transferencia de conocimiento como parte del producto.",
+  "Te explicamos en español de negocio.",
+  "Cuidamos tu inversión como si fuera nuestra.",
+  "Construimos para vender, ahorrar o proteger.",
+  "No desaparecemos después del lanzamiento.",
 ];
 
 export function PrinciplesSection() {
   return (
     <SectionShell
       className="pt-0"
-      eyebrow="Principios"
-      title="La excelencia tecnica tambien debe sentirse tranquila."
-      intro="Trabajamos para que los equipos puedan confiar, preguntar, auditar y continuar. El cuidado no suaviza el rigor: lo vuelve sostenible."
+      eyebrow="Nosotros"
+      title="Somos el equipo tech que habla como socio, no como manual."
+      intro="La tecnología puede ser compleja por dentro, pero para ti debe sentirse clara, útil y rentable."
     >
       <div className="mt-10 grid gap-4 md:grid-cols-2">
         {principles.map((principle) => (

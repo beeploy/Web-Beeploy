@@ -2,42 +2,62 @@ import { SectionShell } from "@/components/ui/section-shell";
 
 const services = [
   {
+    title: "Desarrollo a la Medida",
+    body: "Creamos la App, Web o Sistema que tu negocio necesita para vender, operar mejor y dejar de depender de procesos manuales.",
+    proof: "Ideal para automatizar ventas, reservas, inventario, clientes o reportes internos.",
+  },
+  {
     title: "Ciberseguridad",
-    body: "Reducimos exposicion con diagnosticos, hardening, gestion de riesgos y controles que el negocio puede entender.",
+    body: "Protegemos a tu empresa de hackeos y fugas de información antes de que un incidente te cueste dinero, reputación o clientes.",
+    proof: "Ideal para empresas que manejan clientes, pagos, accesos o información sensible.",
   },
   {
-    title: "Datos",
-    body: "Ordenamos fuentes, modelos y tableros para convertir operacion dispersa en decisiones trazables.",
-  },
-  {
-    title: "Software a medida",
-    body: "Construimos herramientas internas y productos digitales ajustados a procesos reales, no a plantillas genericas.",
+    title: "Datos e IA",
+    body: "Organizamos tu información para que tomes decisiones rentables con tableros, indicadores y automatizaciones inteligentes.",
+    proof: "Ideal para saber qué vender, dónde invertir y qué procesos están drenando margen.",
   },
 ];
 
 export function ServicePillars() {
   return (
     <SectionShell
+      className="honeycomb-bg"
       eyebrow="Servicios"
-      title="Tres capacidades para sistemas que no pueden fallar."
-      intro="Beeploy entra donde la tecnologia toca riesgo, operacion y confianza. Cada servicio se disena para dejar criterio instalado, no dependencia."
+      title="Soluciones que un dueño de negocio entiende desde el primer minuto."
+      intro="No vendemos código: vendemos crecimiento, protección y claridad para que tu empresa opere mejor."
     >
-      <div className="mt-10 grid gap-5 lg:grid-cols-3">
+      <div id="servicios" className="mt-10 grid gap-6 lg:grid-cols-3">
         {services.map((service, index) => (
-          <article
-            key={service.title}
-            className="rounded-xl border border-text-main/10 bg-surface p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-soft"
+          <article 
+            key={service.title} 
+            className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-text-main/10 bg-surface p-10 transition-all duration-300 hover:-translate-y-[6px] hover:shadow-[0_0_0_1px_rgba(255,204,51,0.15),0_10px_30px_rgba(255,204,51,0.10)]"
           >
-            <div className="flex items-center justify-between gap-4">
-              <span className="grid size-11 place-items-center rounded-xl bg-golden-pollen font-heading text-lg font-black text-text-main">
+            <div className="mb-6 flex items-start gap-5">
+              <div className="hexagon grid size-14 shrink-0 place-items-center bg-golden-pollen font-heading text-lg font-black text-text-main">
                 0{index + 1}
-              </span>
-              <span className="h-px flex-1 bg-text-main/10" />
+              </div>
+              <h3 className="line-clamp-2 pt-1.5 font-heading text-2xl font-black text-text-main">
+                {service.title}
+              </h3>
             </div>
-            <h3 className="mt-8 font-heading text-2xl font-black text-text-main">
-              {service.title}
-            </h3>
-            <p className="mt-4 leading-7 text-text-muted">{service.body}</p>
+            
+            <div className="flex flex-1 flex-col">
+              <p className="font-sans text-base font-medium leading-relaxed text-text-main/90">
+                {service.body}
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-text-muted">
+                {service.proof}
+              </p>
+            </div>
+            
+            <a
+              href={`https://wa.me/593997963617?text=${encodeURIComponent(`Hola Beeploy, me interesa el servicio de ${service.title}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-auto mt-10 inline-flex min-h-12 w-4/5 items-center justify-center rounded-full bg-golden-pollen px-6 py-3 text-sm font-black text-text-main transition hover:bg-golden-hover"
+            >
+              Quiero esta solución
+            </a>
           </article>
         ))}
       </div>

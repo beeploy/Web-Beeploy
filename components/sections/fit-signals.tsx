@@ -1,19 +1,19 @@
 import { SectionShell } from "@/components/ui/section-shell";
 
 const signals = [
-  "Riesgos de seguridad sin priorizacion ejecutiva.",
-  "Datos repartidos entre sistemas que no conversan.",
-  "Procesos manuales que ya cuestan demasiado.",
-  "Herramientas internas fragiles o imposibles de escalar.",
-  "Producto digital que necesita base tecnica seria.",
-  "Equipos que necesitan claridad, no ruido consultivo.",
+  "Tu equipo copia datos a mano todos los días.",
+  "Tu web existe, pero no convierte clientes.",
+  "No sabes qué producto, sucursal o canal deja más margen.",
+  "Te preocupa que un hackeo pare la operación.",
+  "Tu negocio creció y Excel ya no alcanza.",
+  "Quieres una app o sistema, pero no sabes por dónde empezar.",
 ];
 
 export function FitSignals() {
   return (
     <SectionShell
       eyebrow="Cuando entrar"
-      title="Beeploy es util cuando la operacion ya pide arquitectura."
+      title="Beeploy entra cuando la tecnología ya debe producir dinero."
     >
       <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {signals.map((signal) => (
