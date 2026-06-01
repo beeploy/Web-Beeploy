@@ -2,6 +2,7 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { FitSignals } from "@/components/sections/fit-signals";
 import { Hero } from "@/components/sections/hero";
 import { MethodTimeline } from "@/components/sections/method-timeline";
+import { MethodologyManifesto } from "@/components/sections/methodology-manifesto";
 import { PrinciplesSection } from "@/components/sections/principles-section";
 import { PurposeBridge } from "@/components/sections/purpose-bridge";
 import { ServicePillars } from "@/components/sections/service-pillars";
@@ -31,6 +32,7 @@ export default function Home() {
       <MethodTimeline />
       <FitSignals />
       <PrinciplesSection />
+      <MethodologyManifesto />
       <PurposeBridge />
       <FinalCta />
     </main>

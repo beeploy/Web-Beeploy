@@ -23,7 +23,7 @@ export function MethodTimeline() {
   return (
     <SectionShell
       className="bg-surface"
-      eyebrow="Método"
+      eyebrow="El Proceso Beeploy"
       title="De la idea al retorno, sin marearte con tecnicismos."
       intro="Beeploy traduce necesidades de negocio en soluciones digitales que se pueden vender, medir y mantener."
     >

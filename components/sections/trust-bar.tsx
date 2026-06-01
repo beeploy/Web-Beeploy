@@ -1,9 +1,9 @@
 import { TrendingUp, ShieldCheck, Network } from "lucide-react";
 
 const items = [
-  { text: "Más ventas con mejores sistemas", icon: TrendingUp },
-  { text: "Menos riesgos y fugas de información", icon: ShieldCheck },
-  { text: "Decisiones rentables con datos claros", icon: Network },
+  { text: "Más ventas con mejores sistemas", desc: "Optimizamos tus canales digitales y automatizamos procesos para atraer y retener más clientes.", icon: TrendingUp },
+  { text: "Menos riesgos y fugas de información", desc: "Blindamos tu infraestructura contra ataques externos y aseguramos la continuidad operativa 24/7.", icon: ShieldCheck },
+  { text: "Decisiones rentables con datos claros", desc: "Transformamos tu información dispersa en tableros visuales para que tomes decisiones basadas en métricas reales.", icon: Network },
 ];
 
 export function TrustBar() {
@@ -17,6 +17,9 @@ export function TrustBar() {
               <Icon className="mb-4 size-6 text-golden-pollen" />
               <p className="font-heading text-xl font-black text-text-main">
                 {item.text}
+              </p>
+              <p className="text-neutral-600 text-sm mt-2 leading-relaxed">
+                {item.desc}
               </p>
             </div>
           );

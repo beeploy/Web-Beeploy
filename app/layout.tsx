@@ -19,6 +19,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://webbeeploytest.netlify.app"),
+  alternates: {
+    canonical: '/',
+  },
   title: "Beeploy | Tecnología de élite para hacer crecer tu empresa",
   description: "Desarrollo a la medida, automatizaciones con IA y ciberseguridad corporativa. Construimos sistemas que escalan operaciones y protegen tu información.",
   openGraph: {
@@ -59,7 +62,7 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang="es" className={`scroll-smooth ${rubik.variable} ${inter.variable}`}>
-      <body className="bg-background font-body text-text-main antialiased">
+      <body className="bg-[#FFFCF8] font-body text-text-main antialiased">
         <a
           href="#contenido"
           className="skip-link rounded-full bg-text-main px-4 py-3 text-sm font-semibold text-white shadow-soft"
@@ -71,6 +74,27 @@ export default function RootLayout({
           {children}
         </div>
         <SiteFooter />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              "name": "Beeploy",
+              "url": "https://webbeeploytest.netlify.app",
+              "description": "Desarrollo de software a la medida, automatizaciones con IA y ciberseguridad corporativa en Guayaquil, Ecuador.",
+              "telephone": "+593997963617",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Guayaquil",
+                "addressRegion": "Guayas",
+                "addressCountry": "EC"
+              },
+              "areaServed": "Guayaquil",
+              "priceRange": "$$"
+            })
+          }}
+        />
       </body>
     </html>
   );
