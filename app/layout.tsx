@@ -18,14 +18,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://beeploy.com"),
+  metadataBase: new URL("https://webbeeploytest.netlify.app"),
   title: "Beeploy | Tecnología de élite para hacer crecer tu empresa",
   description: "Desarrollo a la medida, automatizaciones con IA y ciberseguridad corporativa. Construimos sistemas que escalan operaciones y protegen tu información.",
   openGraph: {
     title: "Beeploy | Tecnología de Élite",
     description: "Sistemas a la medida, IA y Ciberseguridad para empresas.",
-    url: "https://beeploy.com", 
+    url: "/",
     siteName: "Beeploy",
+    images: [
+      {
+        url: "/banner-beeploy.png", 
+        width: 1200,
+        height: 630,
+        alt: "Beeploy Banner Corporativo",
+      },
+    ],
     locale: "es_EC",
     type: "website",
   },
@@ -33,6 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Beeploy | Tecnología de Élite",
     description: "Sistemas a la medida, IA y Ciberseguridad para empresas.",
+    images: ["/banner-beeploy.png"],
   },
   robots: {
     index: true,
