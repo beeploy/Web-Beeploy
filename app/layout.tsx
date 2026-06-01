@@ -64,7 +64,9 @@ export default function RootLayout({
           Saltar al contenido
         </a>
         <SiteHeader />
-        {children}
+        <div className="pt-20">
+          {children}
+        </div>
         <SiteFooter />
       </body>
     </html>

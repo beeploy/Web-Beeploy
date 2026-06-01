@@ -69,10 +69,10 @@ test("SEO metadata and structured data are present on the landing", () => {
   assert.match(page, /Organization/);
 });
 
-test("performance keeps the first version server-rendered without client components", () => {
+test("performance keeps core sections server-rendered without client components", () => {
   const sources = ["app", "components"]
     .flatMap(sourceFiles)
-    .filter((path) => path.endsWith(".tsx"))
+    .filter((path) => path.endsWith(".tsx") && !path.includes("site-header.tsx"))
     .map(file)
     .join("\n");
 

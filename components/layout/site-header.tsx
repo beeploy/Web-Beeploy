@@ -1,6 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { BeeployMark } from "@/components/brand/beeploy-mark";
-import { JSX } from "react";
+import { JSX, useState, useEffect } from "react";
 
 const navItems = [
   { href: "/", label: "Inicio" },
@@ -10,8 +12,33 @@ const navItems = [
 ];
 
 export function SiteHeader(): JSX.Element {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-40 border-b border-text-main/10 bg-surface/92 backdrop-blur">
+    <header 
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out bg-white/80 backdrop-blur-md border-b border-text-main/10 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-4 px-6">
         <Link href="/" aria-label="Ir al inicio de Beeploy">
           <BeeployMark />
