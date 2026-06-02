@@ -35,7 +35,7 @@ export function SiteHeader(): JSX.Element {
 
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out bg-white/90 backdrop-blur-sm border-b border-text-main/10 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out bg-white/70 backdrop-blur-md border-b border-neutral-100 shadow-sm ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >

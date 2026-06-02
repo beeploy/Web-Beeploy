@@ -31,12 +31,12 @@ export function PrinciplesSection() {
         {principles.map((principle, index) => (
           <div
             key={principle.title}
-            className="rounded-xl border border-text-main/10 bg-surface p-6 text-left"
+            className="rounded-2xl border border-neutral-100 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-6 text-left"
           >
             <span className="mb-2 block text-sm font-bold text-golden-pollen">
               0{index + 1}
             </span>
-            <p className="font-heading text-2xl font-black text-text-main">
+            <p className="font-heading text-2xl font-black text-neutral-900">
               {principle.title}
             </p>
             <p className="text-neutral-600 text-sm mt-2">

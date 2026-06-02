@@ -3,7 +3,7 @@ import { ButtonLink } from "@/components/ui/button-link";
 
 export function Hero() {
   return (
-    <section className="honeycomb-bg relative overflow-hidden px-6 pb-16 pt-12 sm:pb-24 sm:pt-18">
+    <section className="relative overflow-hidden px-6 pb-16 pt-12 sm:pb-24 sm:pt-18">
       <div
         className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03]"
         aria-hidden="true"
@@ -24,7 +24,7 @@ export function Hero() {
       </div>
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1fr_0.92fr]">
         <div className="relative z-10 max-w-3xl">
-          <p className="mb-6 inline-block rounded-full border border-text-main/10 bg-transparent px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-text-muted cursor-default">
+          <p className="mb-6 inline-block px-6 py-2 rounded-full border border-amber-300 bg-amber-100 text-amber-950 font-bold uppercase tracking-wide text-xs text-center cursor-default">
             La Colmena de la Tecnología
           </p>
           <h1 className="text-balance font-heading text-5xl font-black leading-[1.02] text-text-main sm:text-6xl lg:text-7xl">

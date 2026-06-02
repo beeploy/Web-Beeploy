@@ -22,7 +22,7 @@ const steps = [
 export function MethodTimeline() {
   return (
     <SectionShell
-      className="bg-surface"
+      className=""
       eyebrow="El Proceso Beeploy"
       title="De la idea al retorno, sin marearte con tecnicismos."
       intro="Beeploy traduce necesidades de negocio en soluciones digitales que se pueden vender, medir y mantener."
@@ -31,12 +31,12 @@ export function MethodTimeline() {
         {steps.map((step, index) => (
           <li
             key={step.title}
-            className="relative rounded-xl border border-text-main/10 bg-background p-6"
+            className="relative rounded-2xl border border-neutral-100 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-6"
           >
             <span className="text-sm font-bold text-text-muted">
               Paso {index + 1}
             </span>
-            <h3 className="mt-4 font-heading text-2xl font-black text-text-main">
+            <h3 className="mt-4 font-heading text-2xl font-black text-neutral-900">
               {step.title}
             </h3>
             <p className="mt-4 leading-7 text-text-muted">{step.body}</p>

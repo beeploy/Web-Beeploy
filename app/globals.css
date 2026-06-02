@@ -16,7 +16,6 @@ html {
 
 body {
   margin: 0;
-  background: #F8F9FA;
   color: #1A1A1A;
   font-family: var(--font-inter), sans-serif;
   text-rendering: geometricPrecision;
@@ -53,30 +52,18 @@ a {
   transform: translateY(0);
 }
 
-.technical-grid {
+.bg-grid-pattern {
   background-image:
-    linear-gradient(rgba(26, 26, 26, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(26, 26, 26, 0.06) 1px, transparent 1px);
-  background-size: 42px 42px;
-}
-
-.honeycomb-bg {
-  background-image:
-    url("data:image/svg+xml,%3Csvg width='96' height='84' viewBox='0 0 96 84' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 2h48l22 40-22 40H24L2 42 24 2Z' fill='none' stroke='%23FFCC33' stroke-opacity='.05' stroke-width='1'/%3E%3C/svg%3E"),
-    linear-gradient(180deg, rgba(255, 204, 51, 0.04), rgba(248, 249, 250, 0));
-  background-position:
-    top right,
-    center;
-  background-size:
-    112px 98px,
-    auto;
+    linear-gradient(to right, #F2EFEB 1px, transparent 1px),
+    linear-gradient(to bottom, #F2EFEB 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 .dark-technical-grid {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-  background-size: 42px 42px;
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 .hexagon {

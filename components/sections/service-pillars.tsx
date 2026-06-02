@@ -33,7 +33,7 @@ const services: Service[] = [
 export function ServicePillars(): JSX.Element {
   return (
     <SectionShell
-      className="honeycomb-bg"
+      className="bg-grid-pattern"
       eyebrow="Servicios"
       title="Soluciones que un dueño de negocio entiende desde el primer minuto."
       intro="No vendemos código. Vendemos crecimiento, protección y claridad para que tu empresa opere mejor."
@@ -42,13 +42,13 @@ export function ServicePillars(): JSX.Element {
         {services.map((service, index) => (
           <article 
             key={service.title} 
-            className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-text-main/10 bg-surface p-10 transition-all duration-300 hover:-translate-y-[6px] hover:shadow-[0_0_0_1px_rgba(255,204,51,0.15),0_10px_30px_rgba(255,204,51,0.10)]"
+            className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-100 bg-white p-10 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-[6px] hover:shadow-[0_0_0_1px_rgba(255,204,51,0.15),0_10px_30px_rgba(255,204,51,0.10)]"
           >
-            <div className="mb-6 flex items-start gap-5">
+            <div className="mb-6 flex items-start gap-5 min-h-[80px]">
               <div className="hexagon grid size-14 shrink-0 place-items-center bg-golden-pollen font-heading text-lg font-black text-text-main">
                 0{index + 1}
               </div>
-              <h3 className="line-clamp-2 pt-1.5 font-heading text-2xl font-black text-text-main">
+              <h3 className="line-clamp-2 pt-1.5 font-heading text-2xl font-black text-neutral-900">
                 {service.title}
               </h3>
             </div>

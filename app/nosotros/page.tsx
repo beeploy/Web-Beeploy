@@ -105,13 +105,13 @@ export default function NosotrosPage() {
       <SectionShell
         eyebrow="La Mente Colmena"
         title="Nuestros Pilares"
-        className="technical-grid"
+        className="bg-grid-pattern"
       >
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {pillars.map((pilar) => (
             <article
               key={pilar.title}
-              className="flex flex-col gap-4 rounded-xl border border-text-main/10 bg-surface p-8 shadow-soft transition-colors duration-300 hover:border-golden-pollen/50"
+              className="flex flex-col gap-4 rounded-2xl border border-neutral-100 bg-white p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-colors duration-300 hover:border-golden-pollen/50"
             >
               <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-golden-pollen/10 text-text-main">
                 {pilar.icon}

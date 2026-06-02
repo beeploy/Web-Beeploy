@@ -4,7 +4,7 @@ import { BeeployBeePlaceholder } from "@/components/visuals/beeploy-bee-placehol
 export function PurposeBridge() {
   return (
     <section className="px-6 py-20">
-      <div className="dark-technical-grid mx-auto overflow-hidden rounded-xl bg-text-main text-white shadow-soft">
+      <div className="dark-technical-grid mx-auto overflow-hidden rounded-2xl bg-[#1a1a1a] text-white shadow-soft">
         <div className="grid gap-10 p-8 sm:p-12 lg:grid-cols-[1fr_0.8fr] lg:p-16">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-golden-pollen">

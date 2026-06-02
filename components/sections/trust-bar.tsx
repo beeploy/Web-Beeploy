@@ -9,15 +9,17 @@ const items = [
 export function TrustBar() {
   return (
     <section className="px-6">
-      <div className="mx-auto grid max-w-7xl gap-px overflow-hidden rounded-xl border border-text-main/10 bg-text-main/10 sm:grid-cols-3">
+      <div className="mx-auto grid max-w-7xl gap-6 sm:grid-cols-3">
         {items.map((item) => {
           const Icon = item.icon;
           return (
-            <div key={item.text} className="bg-surface p-6">
-              <Icon className="mb-4 size-6 text-golden-pollen" />
-              <p className="font-heading text-xl font-black text-text-main">
-                {item.text}
-              </p>
+            <div key={item.text} className="bg-white p-7 flex flex-col h-full items-start rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-neutral-100">
+              <Icon className="mb-4 size-6 text-golden-pollen shrink-0" />
+              <div className="min-h-[64px]">
+                <p className="font-heading text-xl font-black text-neutral-900">
+                  {item.text}
+                </p>
+              </div>
               <p className="text-neutral-600 text-sm mt-2 leading-relaxed">
                 {item.desc}
               </p>
