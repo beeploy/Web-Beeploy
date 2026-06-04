@@ -1,12 +1,14 @@
-import { TrendingUp, ShieldCheck, Network } from "lucide-react";
+import { Zap, ShieldCheck, BrainCircuit } from "lucide-react";
+import { hexClip } from "@/components/ui/hexClip";
 
 const items = [
-  { text: "Crecimiento sin fricción operativa", desc: "Automatizamos procesos manuales para que tu equipo deje de copiar y pegar, y empiece a generar más ventas.", icon: TrendingUp },
-  { text: "Seguridad que protege tu reputación", desc: "Construimos arquitecturas resilientes que blindan tu información antes de que una vulnerabilidad detenga tu negocio.", icon: ShieldCheck },
-  { text: "Decisiones basadas en datos reales", desc: "Conectamos tus sistemas dispersos para transformar datos aislados en visibilidad total y decisiones rentables.", icon: Network },
+  { text: "Fluidez Operativa", desc: "Erradicamos procesos repetitivos mediante flujos asíncronos para que tu equipo se concentre en rentabilidad, no en trabajo mecánico.", icon: Zap },
+  { text: "Ciberseguridad Resiliente", desc: "Implementamos infraestructuras blindadas que protegen tus activos críticos antes de que una vulnerabilidad paralice el negocio.", icon: ShieldCheck },
+  { text: "Inteligencia Predictiva", desc: "Unificamos bases de datos aisladas en tableros de control precisos, habilitando decisiones respaldadas matemáticamente.", icon: BrainCircuit },
 ];
 
 export function TrustBar() {
+
   return (
     <section className="px-6">
       <div className="mx-auto grid max-w-7xl gap-6 sm:grid-cols-3">
@@ -14,8 +16,13 @@ export function TrustBar() {
           const Icon = item.icon;
           return (
             <div key={item.text} className="bg-white p-7 flex flex-col h-full items-start rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-neutral-100">
-              <div className="mb-4 flex items-center justify-center w-12 h-12 bg-amber-400 rounded-xl shrink-0">
-                <Icon className="size-6 text-neutral-900" />
+              <div
+                className="mb-6 relative grid size-14 h-12 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-lg"
+                style={{ clipPath: hexClip }}
+              >
+                <div className="absolute inset-0 h-[55%] bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay pointer-events-none"></div>
+                <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-amber-800/35 to-transparent pointer-events-none"></div>
+                <Icon className="relative z-10 size-6 text-amber-950" />
               </div>
               <div className="min-h-[64px]">
                 <p className="font-heading text-xl font-black text-neutral-900">

@@ -14,9 +14,15 @@ const organizationSchema = {
   name: "Beeploy",
   url: "https://beeploy.com",
   description:
-    "Casa ecuatoriana de desarrollo de software especializada en ciberseguridad, datos y software a medida.",
+    "Ecosistema integral de soluciones tecnológicas diseñado para democratizar el acceso a software a medida, automatización e Inteligencia Artificial en Latinoamérica.",
   areaServed: ["Ecuador", "Latinoamérica"],
-  knowsAbout: ["Ciberseguridad", "Datos", "Software a medida"],
+  knowsAbout: [
+    "Arquitectura Hexagonal",
+    "Desarrollo B2B",
+    "Automatización de Procesos",
+    "Ciberseguridad Resiliente",
+    "Análisis de Datos e IA",
+  ],
 };
 
 export default function Home() {

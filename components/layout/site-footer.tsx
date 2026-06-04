@@ -34,14 +34,14 @@ export function SiteFooter() {
             <BeeployMark inverse />
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/70">
-            La Mente Colmena: Tecnología al servicio del trabajo humano.
+            Inteligencia colectiva y arquitectura modular consolidada como catalizador de resiliencia empresarial.
           </p>
         </div>
 
         {/* Columna Central: Contacto */}
         <div className="flex flex-col">
           <h3 className="text-xs font-bold uppercase tracking-wider text-white/50 mb-4">
-            Contacto
+            Auditoría Estructural
           </h3>
           <a
             href="https://wa.me/593997963617"
@@ -57,7 +57,7 @@ export function SiteFooter() {
         {/* Columna Derecha: Redes Sociales */}
         <div className="flex flex-col">
           <h3 className="text-xs font-bold uppercase tracking-wider text-white/50 mb-4">
-            Síguenos
+            Nodos del Ecosistema
           </h3>
           <div className="flex gap-5 items-center">
             <a

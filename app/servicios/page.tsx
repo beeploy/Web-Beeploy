@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { SectionShell } from "@/components/ui/section-shell";
 import { SquareCode, Brain, Workflow, Database } from "lucide-react";
+import { hexClip } from "@/components/ui/hexClip";
 
 export const metadata: Metadata = {
-  title: "Servicios",
+  title: "Servicios | Ecosistema Tecnológico Beeploy",
   description:
-    "Desarrollo a la medida, ciberseguridad y marketing digital para empresas en Ecuador y Latinoamérica. Soluciones que entienden tu negocio desde el primer minuto.",
+    "Infraestructura digital, desarrollo a medida, inteligencia artificial y ciberseguridad resiliente para empresas en Latinoamérica. Transformamos complejidad en crecimiento real.",
 };
 
 /* ─── Datos ──────────────────────────────────────────────── */
@@ -13,91 +14,91 @@ export const metadata: Metadata = {
 const devSolutions = [
   {
     icon: <SquareCode className="w-6 h-6 text-neutral-900 stroke-[2px]" />,
-    title: "Software a la Medida",
-    body: "Apps web o móviles, ERPs, CRMs o portales construidos exactamente para tu flujo de trabajo — sin funciones que nunca usarás.",
+    title: "Arquitectura y Desarrollo Modular",
+    body: "Construimos plataformas, ERPs y aplicaciones web/móviles preparadas para escalar. Diseñamos bajo el principio de arquitectura hexagonal: sistemas desacoplados que protegen el núcleo de tu negocio y no generan dependencia tecnológica.",
   },
   {
     icon: <Brain className="w-6 h-6 text-neutral-900 stroke-[2px]" />,
-    title: "Adopción de IA",
-    body: "Integramos modelos de lenguaje y automatizaciones inteligentes para que operes más rápido con menos personal en tareas repetitivas.",
+    title: "Implementación de Inteligencia Artificial",
+    body: "Integramos modelos algorítmicos predictivos y procesamiento de lenguaje natural. Convertimos la complejidad de la IA en herramientas accesibles que automatizan la toma de decisiones y reducen el trabajo manual repetitivo.",
   },
   {
     icon: <Workflow className="w-6 h-6 text-neutral-900 stroke-[2px]" />,
-    title: "Automatizaciones B2C",
-    body: "Flujos de captación, seguimiento y venta que corren solos: notificaciones, formularios, integraciones con WhatsApp, email o ERP.",
+    title: "Integración y Automatización Sistémica",
+    body: "Conectamos las herramientas que ya utilizas (CRMs, ERPs, canales de venta). Eliminamos los silos de información mediante flujos de trabajo asíncronos para que tu equipo deje de operar manualmente y se enfoque en aportar valor.",
   },
   {
     icon: <Database className="w-6 h-6 text-neutral-900 stroke-[2px]" />,
-    title: "Organización de Datos",
-    body: "Convertimos hojas de cálculo desordenadas en dashboards en tiempo real que te dicen qué vender, dónde invertir y qué cortar.",
+    title: "Orquestación y Análisis de Datos",
+    body: "Centralizamos tu información operativa en paneles de control (dashboards) en tiempo real. Pasamos de datos dispersos y estáticos a inteligencia de negocios accionable que te permite saber con precisión dónde invertir o ajustar.",
   },
 ];
 
 const cyberCards = [
   {
     num: "01",
-    title: "Auditoría de Seguridad Web",
-    body: "Encontramos brechas en tu plataforma — inyecciones SQL, XSS, configuraciones expuestas — antes de que un atacante lo haga.",
+    title: "Auditoría de Infraestructura y Redes",
+    body: "Evaluamos sistemáticamente servidores, bases de datos y arquitecturas cloud. Identificamos brechas de configuración y vulnerabilidades antes de que se conviertan en vectores de acceso para atacantes externos o internos.",
   },
   {
     num: "02",
-    title: "Auditoría de Infraestructura",
-    body: "Evaluamos redes, servidores y Active Directory para detectar accesos no autorizados, configuraciones débiles y vectores internos.",
+    title: "Análisis de Seguridad en Aplicaciones",
+    body: "Sometemos tus plataformas web y móviles a pruebas rigurosas. Detectamos fallos críticos (inyecciones SQL, XSS, autenticaciones débiles) para garantizar que los datos de tus clientes y la continuidad de tu negocio permanezcan blindados.",
   },
   {
     num: "03",
-    title: "Explotación y Mitigación",
-    body: "Realizamos un ataque ético controlado sobre tu entorno, documentamos cada vector y entregamos el plan de corrección priorizado.",
+    title: "Explotación Ética y Plan de Mitigación",
+    body: "Simulamos ataques controlados para medir la resiliencia real de tus sistemas. No solo reportamos el problema, sino que entregamos un plan de arquitectura defensiva priorizado para neutralizar riesgos sin detener tu operación.",
   },
 ];
 
 const marketingPlans = [
   {
-    tier: "Básico",
-    tagline: "Presencia constante",
+    tier: "Presencia Base",
+    tagline: "Ecosistema Inicial",
     features: [
-      "2 redes sociales",
-      "8 posts / mes",
-      "Diseño gráfico incluido",
-      "Reporte mensual",
+      "Activación de 2 canales digitales",
+      "8 piezas de comunicación mensual",
+      "Diseño alineado a identidad visual",
+      "Reporte de alcance y visibilidad",
     ],
-    cta: "Quiero el plan Básico",
+    cta: "Iniciar con Presencia Base",
     highlight: false,
   },
   {
-    tier: "Intermedio",
-    tagline: "Más alcance y pauta",
+    tier: "Crecimiento Digital",
+    tagline: "Expansión y Captación",
     features: [
-      "3 redes sociales",
-      "16 posts / mes",
-      "Pauta básica (Meta Ads)",
-      "Análisis de audiencia",
+      "Gestión de 3 canales digitales",
+      "16 piezas de contenido estratégico",
+      "Integración de pauta publicitaria",
+      "Análisis de audiencia y conversión",
     ],
-    cta: "Quiero el plan Intermedio",
+    cta: "Seleccionar Crecimiento Digital",
     highlight: false,
   },
   {
-    tier: "Avanzado",
-    tagline: "Estrategia completa",
+    tier: "Adquisición Integral",
+    tagline: "Arquitectura de Conversión",
     features: [
-      "Todas las redes activas",
-      "Meta Ads + Google Ads",
-      "SEO on-page",
-      "Funnel de conversión",
+      "Cobertura omnicanal activa",
+      "Estrategia combinada (Meta/Google Ads)",
+      "Optimización SEO on-page",
+      "Despliegue de Funnel automatizado",
     ],
-    cta: "Quiero el plan Avanzado",
+    cta: "Implementar Adquisición Integral",
     highlight: true,
   },
   {
-    tier: "Corporativo",
-    tagline: "A medida · 360°",
+    tier: "Partner Corporativo",
+    tagline: "Solución a la Medida",
     features: [
-      "Sistema completo a medida",
-      "Branding + identidad visual",
-      "Estrategia omnicanal",
-      "Consultoría mensual",
+      "Auditoría y reestructuración de marca",
+      "Ecosistema de captación 360°",
+      "Desarrollo de identidad corporativa",
+      "Consultoría estratégica continua",
     ],
-    cta: "Quiero el plan Corporativo",
+    cta: "Agendar diagnóstico corporativo",
     highlight: false,
   },
 ];
@@ -110,11 +111,13 @@ function waLink(message: string) {
 
 /* ─── Componentes internos de página ─────────────────────── */
 
-function CheckIcon() {
+function CheckIcon({ highlight }: { highlight?: boolean }) {
   return (
-    <svg viewBox="0 0 16 16" className="mt-0.5 size-4 shrink-0 text-golden-pollen" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M3 8l3.5 3.5L13 4" />
-    </svg>
+    <div className={`mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full ${highlight ? 'bg-golden-pollen text-neutral-900' : 'bg-neutral-900 text-golden-pollen'}`}>
+      <svg viewBox="0 0 16 16" className="size-3" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M3 8l3.5 3.5L13 4" />
+      </svg>
+    </div>
   );
 }
 
@@ -128,14 +131,13 @@ export default function ServiciosPage() {
       <section className="px-6 pb-16 pt-20 text-center sm:pb-24 sm:pt-28">
         <div className="mx-auto max-w-4xl">
           <p className="mb-5 inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-900 text-xs font-bold uppercase tracking-wider">
-            SERVICIOS BEEPLOY
+            ECOSISTEMA DE SOLUCIONES
           </p>
           <h1 className="text-balance font-heading text-4xl font-black leading-[1.05] text-text-main sm:text-5xl lg:text-6xl">
-            Soluciones que tu negocio entiende desde el primer minuto.
+            Tecnología diseñada para adaptarse al negocio, no al revés.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-text-muted">
-            No vendemos tecnología. Vendemos tiempo que recuperas, dinero que
-            dejas de perder y clientes que atraes.
+            La complejidad tecnológica no debe ser una carga operativa. Diseñamos infraestructuras, automatizaciones y sistemas resilientes que traducen inversión en tiempo recuperado, seguridad y crecimiento escalable.
           </p>
         </div>
       </section>
@@ -143,8 +145,8 @@ export default function ServiciosPage() {
       {/* ── Sección 1: Desarrollo a la Medida ────────────── */}
       <SectionShell
         id="desarrollo"
-        eyebrow="Desarrollo a la Medida"
-        title="El sistema que necesitas, no el que te sobre-venden."
+        eyebrow="Arquitectura de Software"
+        title="Construimos sistemas preparados para evolucionar."
         className="scroll-mt-24"
       >
         <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-16">
@@ -152,23 +154,21 @@ export default function ServiciosPage() {
           {/* Columna problema */}
           <div className="rounded-xl border border-text-main/10 bg-background p-8 sm:p-10">
             <span className="mb-4 block text-xs font-bold uppercase tracking-widest text-text-muted">
-              El problema real
+              La Tensión Operativa
             </span>
             <p className="font-heading text-2xl font-black leading-snug text-text-main sm:text-3xl">
-              Las empresas gastan miles en sistemas genéricos que solo usan al&nbsp;30%.
+              Procesos manuales, sistemas desconectados y tecnologías rígidas que limitan el potencial del negocio.
             </p>
             <p className="mt-5 text-base leading-7 text-text-muted">
-              Nosotros construimos exactamente lo que necesitas. Sin licencias
-              anuales de módulos que nunca abres, sin adaptarte al software:
-              el software se adapta a ti.
+              Cuando el equipo operativo debe adaptarse a un software cerrado, se generan ineficiencias críticas. Nosotros analizamos tu flujo real de trabajo para diseñar una infraestructura modular que se integra de manera transparente, erradicando cuellos de botella y permitiendo que la empresa crezca sin multiplicar su complejidad.
             </p>
             <a
-              href={waLink("Hola equipo de Beeploy. Quiero agendar un diagnóstico tecnológico para mi empresa.")}
+              href={waLink("Hola equipo de Beeploy. Quiero agendar un diagnóstico tecnológico para analizar mi infraestructura.")}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-golden-pollen px-7 py-3 text-sm font-black text-text-main transition hover:bg-golden-hover"
             >
-              Agendar diagnóstico →
+              Agendar diagnóstico estructural →
             </a>
           </div>
 
@@ -179,10 +179,12 @@ export default function ServiciosPage() {
                 key={s.title}
                 className="flex flex-col gap-3 rounded-xl border border-text-main/10 bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft"
               >
-                <div className="w-12 h-12 flex items-center justify-center bg-amber-400 rounded-xl shrink-0">
-                  {s.icon}
+                <div className="relative grid size-14 h-12 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-md" style={{ clipPath: hexClip }}>
+                  <div className="absolute inset-0 h-[55%] bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay pointer-events-none"></div>
+                  <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-amber-800/35 to-transparent pointer-events-none"></div>
+                  <span className="relative z-10">{s.icon}</span>
                 </div>
-                <h3 className="font-heading text-lg font-black text-text-main">
+                <h3 className="min-h-[84px] font-heading text-lg font-black text-text-main">
                   {s.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-text-muted">
@@ -200,14 +202,13 @@ export default function ServiciosPage() {
           <div className="max-w-3xl">
             <p className="flex items-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-golden-pollen">
               <span className="h-1.5 w-1.5 rounded-full bg-white" />
-              Ciberseguridad
+              Ciberseguridad Resiliente
             </p>
             <h2 className="mt-3 font-heading text-3xl font-black leading-tight text-white sm:text-4xl">
-              Protección para empresas que no pueden perder su información.
+              Protegemos la continuidad y reputación de tu empresa.
             </h2>
-            <p className="mt-4 text-lg leading-8 text-white/70">
-              Un solo incidente puede costar más que todo un año de inversión en
-              tecnología. Nosotros encontramos las brechas antes que los atacantes.
+            <p className="mt-4 text-lg leading-8 text-white/90">
+              Una arquitectura de software no es confiable si es vulnerable. Un incidente de seguridad detiene operaciones y destruye confianza. Nosotros detectamos, analizamos y cerramos brechas estructurales antes de que representen un riesgo financiero.
             </p>
           </div>
 
@@ -223,16 +224,16 @@ export default function ServiciosPage() {
                 <h3 className="font-heading text-xl font-black text-white">
                   {card.title}
                 </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-white/65">
+                <p className="mt-3 flex-1 text-[15px] leading-relaxed text-white/90">
                   {card.body}
                 </p>
                 <a
-                  href={waLink(`Hola Beeploy, me interesa el servicio de ${card.title}.`)}
+                  href={waLink(`Hola Beeploy, necesitamos evaluar la seguridad de nuestra infraestructura mediante una ${card.title}.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-8 inline-flex min-h-11 items-center justify-center rounded-full border border-white/20 px-5 py-2.5 text-sm font-bold text-white transition hover:border-golden-pollen hover:bg-golden-pollen hover:text-text-main"
+                  className="mt-8 inline-flex min-h-11 items-center justify-center rounded-full border border-white/20 px-5 py-2.5 text-sm font-bold text-white/90 transition hover:border-golden-pollen hover:bg-golden-pollen hover:text-text-main"
                 >
-                  Quiero esta auditoría
+                  Solicitar auditoría técnica
                 </a>
               </article>
             ))}
@@ -240,12 +241,12 @@ export default function ServiciosPage() {
         </div>
       </section>
 
-      {/* ── Sección 3: Marketing y Branding — Pricing ──────── */}
+      {/* ── Sección 3: Visibilidad y Adquisición Digital ──────── */}
       <SectionShell
         id="datos-ia"
-        eyebrow="Marketing y Branding"
-        title="Publicar sin estrategia es gritar en el desierto."
-        intro="Cada plan incluye gestión profesional, diseño gráfico y reportes claros para que sepas exactamente qué resultado está generando tu inversión."
+        eyebrow="Estrategia de Visibilidad"
+        title="Tecnología que impulsa la adquisición comercial."
+        intro="Una infraestructura robusta necesita visibilidad para polinizar el mercado. Integramos canales digitales, automatización y métricas claras para que cada esfuerzo de comunicación se convierta en una oportunidad medible."
         className="scroll-mt-24"
       >
         <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
@@ -260,7 +261,7 @@ export default function ServiciosPage() {
             >
               {plan.highlight && (
                 <div className="bg-golden-pollen px-4 py-1.5 text-center text-xs font-black uppercase tracking-widest text-text-main">
-                  Más popular
+                  Estrategia Recomendada
                 </div>
               )}
 
@@ -282,11 +283,11 @@ export default function ServiciosPage() {
 
                 <ul className="mt-6 flex flex-1 flex-col gap-3" role="list">
                   {plan.features.map((feat) => (
-                    <li key={feat} className="flex items-start gap-2.5">
-                      <CheckIcon />
+                    <li key={feat} className="flex items-start gap-3">
+                      <CheckIcon highlight={plan.highlight} />
                       <span
-                        className={`text-sm leading-relaxed ${
-                          plan.highlight ? "text-white/80" : "text-text-muted"
+                        className={`text-[15px] font-medium leading-relaxed ${
+                          plan.highlight ? "text-white/90" : "text-neutral-800"
                         }`}
                       >
                         {feat}
@@ -296,7 +297,7 @@ export default function ServiciosPage() {
                 </ul>
 
                 <a
-                  href={waLink(`Hola Beeploy, me interesa el ${plan.cta.replace("Quiero el ", "")}.`)}
+                  href={waLink(`Hola equipo Beeploy, me interesa evaluar la integración de la estrategia de ${plan.tier}.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`mt-8 inline-flex min-h-12 w-full items-center justify-center rounded-full text-sm font-black transition hover:scale-[1.02] ${
@@ -317,19 +318,18 @@ export default function ServiciosPage() {
       <section className="px-6 pb-24 pt-8">
         <div className="mx-auto max-w-7xl rounded-xl border border-text-main/10 bg-surface p-8 text-center shadow-soft sm:p-14">
           <h2 className="mx-auto max-w-3xl font-heading text-3xl font-black leading-tight text-text-main sm:text-4xl">
-            ¿No sabes por dónde empezar? Nosotros te orientamos sin costo.
+            La complejidad no debe ser una barrera para el crecimiento de tu organización.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-text-muted">
-            Cuéntanos tu reto más urgente y en 24 horas te respondemos con una
-            propuesta de acción clara.
+            Cuéntanos sobre los cuellos de botella operativos de tu empresa. En menos de 24 horas propondremos un blueprint arquitectónico claro para resolverlos.
           </p>
           <a
-            href={waLink("Hola Beeploy, me interesa conocer más sobre sus servicios tecnológicos.")}
+            href={waLink("Hola Beeploy, buscamos escalar nuestra operación y necesitamos asesoría sobre infraestructura tecnológica.")}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-golden-pollen px-10 py-3 text-sm font-black text-text-main transition hover:bg-golden-hover"
           >
-            Hablar con Beeploy →
+            Contactar al equipo de arquitectura →
           </a>
         </div>
       </section>
