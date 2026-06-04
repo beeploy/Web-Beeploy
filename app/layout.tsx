@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://webbeeploytest.netlify.app"),
+  metadataBase: new URL("https://beeploy.netlify.app"),
   alternates: {
     canonical: '/',
   },
@@ -81,7 +81,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Beeploy",
-              "url": "https://webbeeploytest.netlify.app",
+              "url": "https://beeploy.netlify.app",
               "description": "Desarrollo de software a la medida, automatizaciones con IA y ciberseguridad corporativa en Guayaquil, Ecuador.",
               "telephone": "+593997963617",
               "address": {
