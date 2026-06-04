@@ -35,11 +35,7 @@ export default function CameyappPage() {
             personas en Latinoamérica encuentren oportunidades reales, reputacion
             laboral y una forma digna de crecer.
           </p>
-          <p className="mt-5 max-w-2xl text-base leading-7 text-text-muted">
-            Aqui vivira una Abejita con casco de ingeniero/arquitecto como
-            simbolo amable de una obra seria: tecnologia al servicio del trabajo
-            humano.
-          </p>
+
           <Link
             href="/"
             className="mt-8 inline-flex min-h-12 items-center rounded-full bg-text-main px-6 py-3 text-sm font-bold text-white transition hover:bg-golden-hover hover:text-text-main focus-visible:outline-text-main"
