@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SectionShell } from "@/components/ui/section-shell";
+import { Cpu, Banknote, Rocket } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Nosotros | El Manifiesto",
@@ -9,29 +10,17 @@ export const metadata: Metadata = {
 
 const pillars = [
   {
-    icon: (
-      <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-      </svg>
-    ),
+    icon: <Cpu className="w-6 h-6 text-neutral-900 stroke-[2px]" />,
     title: "Soberanía Digital",
     body: "Creamos independencia técnica para el cliente corporativo.",
   },
   {
-    icon: (
-      <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-      </svg>
-    ),
+    icon: <Banknote className="w-6 h-6 text-neutral-900 stroke-[2px]" />,
     title: "Ingeniería al Retorno",
     body: "Código que funciona como inversión, no como un gasto.",
   },
   {
-    icon: (
-      <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M5 12h14M12 5l7 7-7 7" />
-      </svg>
-    ),
+    icon: <Rocket className="w-6 h-6 text-neutral-900 stroke-[2px]" />,
     title: "Despliegue Estratégico",
     body: "Entregas ágiles, metódicas y sin fricción.",
   },
@@ -44,8 +33,8 @@ export default function NosotrosPage() {
       {/* ── Hero ──────────────────────────────────────────── */}
       <section className="honeycomb-bg px-6 pb-16 pt-20 text-center sm:pb-24 sm:pt-28">
         <div className="mx-auto max-w-4xl">
-          <p className="mb-5 inline-flex rounded-full border border-golden-pollen bg-golden-pollen px-4 py-2 text-sm font-black text-text-main shadow-sm">
-            Manifiesto Beeploy
+          <p className="mb-5 inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-900 text-xs font-bold uppercase tracking-wider">
+            MANIFIESTO BEEPLOY
           </p>
           <h1 className="text-balance font-heading text-4xl font-black leading-[1.05] text-text-main sm:text-5xl lg:text-6xl">
             El software sin propósito humano es solo texto en una pantalla.
@@ -113,7 +102,7 @@ export default function NosotrosPage() {
               key={pilar.title}
               className="flex flex-col gap-4 rounded-2xl border border-neutral-100 bg-white p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-colors duration-300 hover:border-golden-pollen/50"
             >
-              <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-golden-pollen/10 text-text-main">
+              <div className="w-12 h-12 flex items-center justify-center bg-amber-400 rounded-xl shrink-0">
                 {pilar.icon}
               </div>
               <div>
@@ -132,7 +121,7 @@ export default function NosotrosPage() {
       {/* ── Sección Final: El Gran Porqué ─────────────────── */}
       <section className="dark-technical-grid bg-text-main px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.22em] text-white/50">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-golden-pollen">
             El Ecosistema
           </p>
           <h2 className="mt-4 font-heading text-3xl font-black leading-tight text-white sm:text-5xl">

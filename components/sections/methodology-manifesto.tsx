@@ -12,8 +12,8 @@ export function MethodologyManifesto() {
       <div className="mt-12 grid gap-6 md:grid-cols-2">
         {/* Tarjeta 1 - Envuelta en su propio div para Blendy */}
         <div className="methodology-card-wrapper group rounded-2xl border border-neutral-100 bg-white p-8 shadow-md transition-shadow hover:shadow-soft">
-          <div className="mb-6 inline-flex size-12 items-center justify-center rounded-xl bg-golden-pollen/10 text-golden-pollen">
-            <Network className="size-6" />
+          <div className="mb-6 flex items-center justify-center w-12 h-12 bg-amber-400 rounded-xl shrink-0">
+            <Network className="size-6 text-neutral-900" />
           </div>
           <h3 className="mb-4 font-heading text-2xl font-black text-neutral-900">
             Sincronización Ágil
@@ -25,8 +25,8 @@ export function MethodologyManifesto() {
 
         {/* Tarjeta 2 - Envuelta en su propio div para Blendy */}
         <div className="methodology-card-wrapper group rounded-2xl border border-neutral-100 bg-white p-8 shadow-md transition-shadow hover:shadow-soft">
-          <div className="mb-6 inline-flex size-12 items-center justify-center rounded-xl bg-golden-pollen/10 text-golden-pollen">
-            <Hexagon className="size-6" />
+          <div className="mb-6 flex items-center justify-center w-12 h-12 bg-amber-400 rounded-xl shrink-0">
+            <Hexagon className="size-6 text-neutral-900" />
           </div>
           <h3 className="mb-4 font-heading text-2xl font-black text-neutral-900">
             Arquitectura de Panal (Stack Tecnológico)

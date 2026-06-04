@@ -4,24 +4,7 @@ import { ButtonLink } from "@/components/ui/button-link";
 export function Hero() {
   return (
     <section className="relative overflow-hidden px-6 pb-16 pt-12 sm:pb-24 sm:pt-18">
-      <div
-        className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03]"
-        aria-hidden="true"
-      >
-        <svg viewBox="0 0 32 32" className="size-[28rem] sm:size-[40rem] lg:size-[56rem]" fill="none">
-          <path
-            d="M16 3 27 9.5v13L16 29 5 22.5v-13L16 3Z"
-            stroke="#FFCC33"
-            strokeWidth="0.5"
-          />
-          <path
-            d="M11 14h10M11 18h10M16 9v14"
-            stroke="#FFCC33"
-            strokeWidth="0.5"
-            strokeLinecap="round"
-          />
-        </svg>
-      </div>
+
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1fr_0.92fr]">
         <div className="relative z-10 max-w-3xl">
           <p className="mb-6 inline-block px-6 py-2 rounded-full border border-amber-300 bg-amber-100 text-amber-950 font-bold uppercase tracking-wide text-xs text-center cursor-default">
@@ -46,13 +29,7 @@ export function Hero() {
         </div>
 
         <div className="relative min-h-[460px] flex-1 overflow-hidden rounded-2xl border border-text-main/10 bg-surface shadow-soft">
-          {/* Patrón sutil de colmena — se mantiene */}
-          <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-            <svg viewBox="0 0 32 32" className="absolute left-1/2 top-1/2 size-80 -translate-x-1/2 -translate-y-1/2 opacity-[0.06]" fill="none">
-              <path d="M16 3 27 9.5v13L16 29 5 22.5v-13L16 3Z" stroke="#FFCC33" strokeWidth="0.5" />
-              <path d="M11 14h10M11 18h10M16 9v14" stroke="#FFCC33" strokeWidth="0.5" strokeLinecap="round" />
-            </svg>
-          </div>
+
 
           {/* Isotipo solo, limpio, centrado */}
           <div className="absolute inset-0 grid place-items-center">

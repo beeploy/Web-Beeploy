@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SectionShell } from "@/components/ui/section-shell";
+import { SquareCode, Brain, Workflow, Database } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Servicios",
@@ -11,45 +12,22 @@ export const metadata: Metadata = {
 
 const devSolutions = [
   {
-    icon: (
-      <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <rect x="3" y="3" width="18" height="18" rx="3" />
-        <path d="M9 9l6 6M15 9l-6 6" />
-      </svg>
-    ),
+    icon: <SquareCode className="w-6 h-6 text-neutral-900 stroke-[2px]" />,
     title: "Software a la Medida",
     body: "Apps web o móviles, ERPs, CRMs o portales construidos exactamente para tu flujo de trabajo — sin funciones que nunca usarás.",
   },
   {
-    icon: (
-      <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M12 2a10 10 0 1 1 0 20A10 10 0 0 1 12 2Z" />
-        <path d="M12 8v4l3 3" />
-      </svg>
-    ),
+    icon: <Brain className="w-6 h-6 text-neutral-900 stroke-[2px]" />,
     title: "Adopción de IA",
     body: "Integramos modelos de lenguaje y automatizaciones inteligentes para que operes más rápido con menos personal en tareas repetitivas.",
   },
   {
-    icon: (
-      <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M4 6h16M4 12h10M4 18h7" />
-        <circle cx="19" cy="17" r="3" />
-        <path d="M21.5 19.5 23 21" />
-      </svg>
-    ),
+    icon: <Workflow className="w-6 h-6 text-neutral-900 stroke-[2px]" />,
     title: "Automatizaciones B2C",
     body: "Flujos de captación, seguimiento y venta que corren solos: notificaciones, formularios, integraciones con WhatsApp, email o ERP.",
   },
   {
-    icon: (
-      <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <rect x="3" y="3" width="7" height="7" rx="1" />
-        <rect x="14" y="3" width="7" height="7" rx="1" />
-        <rect x="3" y="14" width="7" height="7" rx="1" />
-        <rect x="14" y="14" width="7" height="7" rx="1" />
-      </svg>
-    ),
+    icon: <Database className="w-6 h-6 text-neutral-900 stroke-[2px]" />,
     title: "Organización de Datos",
     body: "Convertimos hojas de cálculo desordenadas en dashboards en tiempo real que te dicen qué vender, dónde invertir y qué cortar.",
   },
@@ -149,8 +127,8 @@ export default function ServiciosPage() {
       {/* ── Hero ──────────────────────────────────────────── */}
       <section className="honeycomb-bg px-6 pb-16 pt-20 text-center sm:pb-24 sm:pt-28">
         <div className="mx-auto max-w-4xl">
-          <p className="mb-5 inline-flex rounded-full border border-golden-pollen bg-golden-pollen px-4 py-2 text-sm font-black text-text-main shadow-sm">
-            Servicios Beeploy
+          <p className="mb-5 inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-900 text-xs font-bold uppercase tracking-wider">
+            SERVICIOS BEEPLOY
           </p>
           <h1 className="text-balance font-heading text-4xl font-black leading-[1.05] text-text-main sm:text-5xl lg:text-6xl">
             Soluciones que tu negocio entiende desde el primer minuto.
@@ -201,9 +179,9 @@ export default function ServiciosPage() {
                 key={s.title}
                 className="flex flex-col gap-3 rounded-xl border border-text-main/10 bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft"
               >
-                <span className="flex size-11 items-center justify-center rounded-xl bg-golden-pollen text-text-main">
+                <div className="w-12 h-12 flex items-center justify-center bg-amber-400 rounded-xl shrink-0">
                   {s.icon}
-                </span>
+                </div>
                 <h3 className="font-heading text-lg font-black text-text-main">
                   {s.title}
                 </h3>
@@ -220,7 +198,7 @@ export default function ServiciosPage() {
       <section id="ciberseguridad" className="dark-technical-grid bg-text-main px-6 py-20 sm:py-28 scroll-mt-24">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-bold uppercase tracking-[0.22em] text-white/50">
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-golden-pollen">
               Ciberseguridad
             </p>
             <h2 className="mt-3 font-heading text-3xl font-black leading-tight text-white sm:text-4xl">
@@ -238,7 +216,7 @@ export default function ServiciosPage() {
                 key={card.num}
                 className="group relative flex flex-col overflow-hidden rounded-xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-golden-pollen/30 hover:bg-white/8"
               >
-                <span className="mb-5 font-heading text-4xl font-black text-golden-pollen/30 transition-colors duration-300 group-hover:text-golden-pollen/60">
+                <span className="mb-5 font-heading text-4xl font-black text-golden-pollen/80 transition-colors duration-300 group-hover:text-golden-pollen">
                   {card.num}
                 </span>
                 <h3 className="font-heading text-xl font-black text-white">
