@@ -5,7 +5,7 @@ import { CameyappPlaceholder } from "@/components/visuals/cameyapp-placeholder";
 export const metadata: Metadata = {
   title: "Cameyapp en construccion",
   description:
-    "El equipo de Beeploy esta construyendo Cameyapp, una plataforma para devolver trabajo y dignidad en Latam.",
+    "El equipo de Beeploy esta construyendo Cameyapp, una plataforma para devolver trabajo y dignidad en Latinoamérica.",
   robots: {
     index: false,
     follow: true,
@@ -16,7 +16,7 @@ export default function CameyappPage() {
   return (
     <main
       id="contenido"
-      className="relative isolate min-h-[calc(100vh-152px)] overflow-hidden bg-background px-6 py-16 sm:py-24"
+      className="relative isolate min-h-[calc(100vh-152px)] overflow-hidden px-6 py-16 sm:py-24"
     >
       <div className="technical-grid absolute inset-0 -z-10 opacity-70" />
       <section className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
@@ -32,7 +32,7 @@ export default function CameyappPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-text-muted">
             El equipo de Beeploy esta trabajando en una plataforma para que mas
-            personas en Latam encuentren oportunidades reales, reputacion
+            personas en Latinoamérica encuentren oportunidades reales, reputacion
             laboral y una forma digna de crecer.
           </p>
           <p className="mt-5 max-w-2xl text-base leading-7 text-text-muted">

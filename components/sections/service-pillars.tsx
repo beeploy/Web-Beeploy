@@ -33,7 +33,7 @@ const services: Service[] = [
 export function ServicePillars(): JSX.Element {
   return (
     <SectionShell
-      className="bg-grid-pattern"
+      className=""
       eyebrow="Servicios"
       title="Soluciones que un dueño de negocio entiende desde el primer minuto."
       intro="No vendemos código. Vendemos crecimiento, protección y claridad para que tu empresa opere mejor."

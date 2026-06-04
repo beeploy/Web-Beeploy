@@ -5,7 +5,7 @@ import { SquareCode, Brain, Workflow, Database } from "lucide-react";
 export const metadata: Metadata = {
   title: "Servicios",
   description:
-    "Desarrollo a la medida, ciberseguridad y marketing digital para empresas en Ecuador y Latam. Soluciones que entienden tu negocio desde el primer minuto.",
+    "Desarrollo a la medida, ciberseguridad y marketing digital para empresas en Ecuador y Latinoamérica. Soluciones que entienden tu negocio desde el primer minuto.",
 };
 
 /* ─── Datos ──────────────────────────────────────────────── */
@@ -125,7 +125,7 @@ export default function ServiciosPage() {
     <main id="contenido">
 
       {/* ── Hero ──────────────────────────────────────────── */}
-      <section className="honeycomb-bg px-6 pb-16 pt-20 text-center sm:pb-24 sm:pt-28">
+      <section className="px-6 pb-16 pt-20 text-center sm:pb-24 sm:pt-28">
         <div className="mx-auto max-w-4xl">
           <p className="mb-5 inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-900 text-xs font-bold uppercase tracking-wider">
             SERVICIOS BEEPLOY
@@ -145,7 +145,7 @@ export default function ServiciosPage() {
         id="desarrollo"
         eyebrow="Desarrollo a la Medida"
         title="El sistema que necesitas, no el que te sobre-venden."
-        className="bg-surface scroll-mt-24"
+        className="scroll-mt-24"
       >
         <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-16">
 
@@ -198,7 +198,8 @@ export default function ServiciosPage() {
       <section id="ciberseguridad" className="dark-technical-grid bg-text-main px-6 py-20 sm:py-28 scroll-mt-24">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-bold uppercase tracking-[0.22em] text-golden-pollen">
+            <p className="flex items-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-golden-pollen">
+              <span className="h-1.5 w-1.5 rounded-full bg-white" />
               Ciberseguridad
             </p>
             <h2 className="mt-3 font-heading text-3xl font-black leading-tight text-white sm:text-4xl">
@@ -245,7 +246,7 @@ export default function ServiciosPage() {
         eyebrow="Marketing y Branding"
         title="Publicar sin estrategia es gritar en el desierto."
         intro="Cada plan incluye gestión profesional, diseño gráfico y reportes claros para que sepas exactamente qué resultado está generando tu inversión."
-        className="honeycomb-bg scroll-mt-24"
+        className="scroll-mt-24"
       >
         <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
           {marketingPlans.map((plan) => (

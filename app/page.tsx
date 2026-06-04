@@ -15,7 +15,7 @@ const organizationSchema = {
   url: "https://beeploy.com",
   description:
     "Casa ecuatoriana de desarrollo de software especializada en ciberseguridad, datos y software a medida.",
-  areaServed: ["Ecuador", "Latam"],
+  areaServed: ["Ecuador", "Latinoamérica"],
   knowsAbout: ["Ciberseguridad", "Datos", "Software a medida"],
 };
 

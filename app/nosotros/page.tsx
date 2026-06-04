@@ -5,7 +5,7 @@ import { Cpu, Banknote, Rocket } from "lucide-react";
 export const metadata: Metadata = {
   title: "Nosotros | El Manifiesto",
   description:
-    "Somos una casa de desarrollo tecnológico de élite 100% ecuatoriana. Construimos sistemas a la medida que escalan empresas y protegen operaciones.",
+    "Esto Necesita un rework entero en texto (se acompañará con visuales cuando esté listo para su respectiva actualización)",
 };
 
 const pillars = [
@@ -29,9 +29,9 @@ const pillars = [
 export default function NosotrosPage() {
   return (
     <main id="contenido">
-      
+
       {/* ── Hero ──────────────────────────────────────────── */}
-      <section className="honeycomb-bg px-6 pb-16 pt-20 text-center sm:pb-24 sm:pt-28">
+      <section className="px-6 pb-16 pt-20 text-center sm:pb-24 sm:pt-28">
         <div className="mx-auto max-w-4xl">
           <p className="mb-5 inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-900 text-xs font-bold uppercase tracking-wider">
             MANIFIESTO BEEPLOY
@@ -47,13 +47,14 @@ export default function NosotrosPage() {
       </section>
 
       {/* ── Sección 2: El Orgullo Neotropical ────────────── */}
-      <section className="bg-surface px-6 py-20 sm:py-28">
+      <section className="px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-center lg:gap-16">
-            
+
             {/* Texto */}
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.22em] text-text-muted">
+              <p className="flex items-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-text-main">
+                <span className="h-1.5 w-1.5 rounded-full bg-golden-pollen" />
                 El Orgullo Neotropical
               </p>
               <h2 className="mt-3 font-heading text-3xl font-black leading-tight text-text-main sm:text-4xl">
@@ -81,9 +82,9 @@ export default function NosotrosPage() {
                 </svg>
               </div>
               <div className="hexagon relative z-10 flex h-40 w-40 items-center justify-center bg-golden-pollen/10 border-2 border-golden-pollen/20 shadow-soft">
-                 <div className="hexagon flex h-32 w-32 items-center justify-center bg-golden-pollen/20 border border-golden-pollen/30">
-                    <div className="hexagon h-24 w-24 bg-golden-pollen"></div>
-                 </div>
+                <div className="hexagon flex h-32 w-32 items-center justify-center bg-golden-pollen/20 border border-golden-pollen/30">
+                  <div className="hexagon h-24 w-24 bg-golden-pollen"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -94,7 +95,7 @@ export default function NosotrosPage() {
       <SectionShell
         eyebrow="La Mente Colmena"
         title="Nuestros Pilares"
-        className="bg-grid-pattern"
+        className=""
       >
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {pillars.map((pilar) => (
@@ -121,7 +122,8 @@ export default function NosotrosPage() {
       {/* ── Sección Final: El Gran Porqué ─────────────────── */}
       <section className="dark-technical-grid bg-text-main px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.22em] text-golden-pollen">
+          <p className="flex items-center justify-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-golden-pollen">
+            <span className="h-1.5 w-1.5 rounded-full bg-white" />
             El Ecosistema
           </p>
           <h2 className="mt-4 font-heading text-3xl font-black leading-tight text-white sm:text-5xl">

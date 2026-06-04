@@ -33,9 +33,9 @@ export function PrinciplesSection() {
             key={principle.title}
             className="rounded-2xl border border-neutral-100 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-6 text-left"
           >
-            <span className="mb-2 block text-sm font-bold text-golden-pollen">
+            <div className="mb-4 inline-flex size-10 items-center justify-center hexagon bg-text-main text-sm font-black text-golden-pollen">
               0{index + 1}
-            </span>
+            </div>
             <p className="font-heading text-2xl font-black text-neutral-900">
               {principle.title}
             </p>

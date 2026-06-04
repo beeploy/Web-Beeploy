@@ -20,7 +20,8 @@ export function SectionShell({
       <div className="mx-auto max-w-7xl">
         <div className="max-w-3xl">
           {eyebrow ? (
-            <p className="text-sm font-bold uppercase tracking-[0.22em] text-text-muted">
+            <p className="flex items-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-text-main">
+              <span className="h-1.5 w-1.5 rounded-full bg-golden-pollen" />
               {eyebrow}
             </p>
           ) : null}

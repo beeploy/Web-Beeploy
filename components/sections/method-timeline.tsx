@@ -33,9 +33,9 @@ export function MethodTimeline() {
             key={step.title}
             className="relative rounded-2xl border border-neutral-100 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-6"
           >
-            <span className="text-sm font-bold text-text-muted">
+            <div className="mb-2 inline-flex items-center justify-center rounded-md bg-text-main px-3 py-1 text-xs font-black uppercase tracking-widest text-golden-pollen">
               Paso {index + 1}
-            </span>
+            </div>
             <h3 className="mt-4 font-heading text-2xl font-black text-neutral-900">
               {step.title}
             </h3>
