@@ -1,9 +1,9 @@
 import { TrendingUp, ShieldCheck, Network } from "lucide-react";
 
 const items = [
-  { text: "Más ventas con mejores sistemas", desc: "Optimizamos tus canales digitales y automatizamos procesos para atraer y retener más clientes.", icon: TrendingUp },
-  { text: "Menos riesgos y fugas de información", desc: "Blindamos tu infraestructura contra ataques externos y aseguramos la continuidad operativa 24/7.", icon: ShieldCheck },
-  { text: "Decisiones rentables con datos claros", desc: "Transformamos tu información dispersa en tableros visuales para que tomes decisiones basadas en métricas reales.", icon: Network },
+  { text: "Crecimiento sin fricción operativa", desc: "Automatizamos procesos manuales para que tu equipo deje de copiar y pegar, y empiece a generar más ventas.", icon: TrendingUp },
+  { text: "Seguridad que protege tu reputación", desc: "Construimos arquitecturas resilientes que blindan tu información antes de que una vulnerabilidad detenga tu negocio.", icon: ShieldCheck },
+  { text: "Decisiones basadas en datos reales", desc: "Conectamos tus sistemas dispersos para transformar datos aislados en visibilidad total y decisiones rentables.", icon: Network },
 ];
 
 export function TrustBar() {

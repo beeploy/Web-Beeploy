@@ -11,21 +11,21 @@ type Service = {
 
 const services: Service[] = [
   {
-    title: "Desarrollo a la Medida",
-    body: "Creamos la App, Web o Sistema que tu negocio necesita para vender, operar mejor y dejar de depender de procesos manuales.",
-    proof: "Ideal para automatizar ventas, reservas, inventario, clientes o reportes internos.",
+    title: "Arquitectura y Desarrollo",
+    body: "Construimos infraestructura digital modular que se adapta a tu negocio. Sistemas y plataformas preparadas para evolucionar sin generar dependencia artificial.",
+    proof: "Ideal para erradicar procesos manuales y escalar operaciones sin multiplicar complejidad.",
     hrefId: "desarrollo",
   },
   {
-    title: "Ciberseguridad",
-    body: "Protegemos a tu empresa de hackeos y fugas de información antes de que un incidente te cueste dinero, reputación o clientes.",
-    proof: "Ideal para empresas que manejan clientes, pagos, accesos o información sensible.",
+    title: "Ciberseguridad Resiliente",
+    body: "Aseguramos la continuidad operativa de tu empresa blindando tus sistemas y datos contra amenazas que pueden costar dinero, clientes y confianza.",
+    proof: "Ideal para organizaciones que necesitan proteger información sensible sin frenar su agilidad.",
     hrefId: "ciberseguridad",
   },
   {
-    title: "Datos e IA",
-    body: "Organizamos tu información para que tomes decisiones rentables con tableros, indicadores y automatizaciones inteligentes.",
-    proof: "Ideal para saber qué vender, dónde invertir y qué procesos están drenando margen.",
+    title: "Datos e Inteligencia",
+    body: "Transformamos tu información dispersa en un activo accionable. Integramos IA y analítica para anticipar demanda y visualizar dónde se pierde margen.",
+    proof: "Ideal para equipos que toman decisiones por intuición y necesitan claridad matemática.",
     hrefId: "datos-ia",
   },
 ];
@@ -34,9 +34,9 @@ export function ServicePillars(): JSX.Element {
   return (
     <SectionShell
       className=""
-      eyebrow="Servicios"
-      title="Soluciones que un dueño de negocio entiende desde el primer minuto."
-      intro="No vendemos código. Vendemos crecimiento, protección y claridad para que tu empresa opere mejor."
+      eyebrow="Ecosistema de Soluciones"
+      title="Tecnología que se adapta a tu negocio, no al revés."
+      intro="Diseñamos sistemas que resuelven problemas estructurales. Traducimos la complejidad tecnológica en herramientas claras que un dueño de negocio puede aprovechar desde el primer minuto."
     >
       <div id="servicios" className="mt-10 grid gap-6 lg:grid-cols-3">
         {services.map((service, index) => (
