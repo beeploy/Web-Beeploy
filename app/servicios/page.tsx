@@ -149,7 +149,7 @@ export default function ServiciosPage() {
         title="Construimos sistemas preparados para evolucionar."
         className="scroll-mt-24"
       >
-        <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-16">
+        <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
 
           {/* Columna problema */}
           <div className="rounded-xl border border-text-main/10 bg-background p-8 sm:p-10">
@@ -179,14 +179,16 @@ export default function ServiciosPage() {
                 key={s.title}
                 className="flex flex-col gap-3 rounded-xl border border-text-main/10 bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft"
               >
-                <div className="relative grid size-14 h-12 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-md" style={{ clipPath: hexClip }}>
-                  <div className="absolute inset-0 h-[55%] bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay pointer-events-none"></div>
-                  <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-amber-800/35 to-transparent pointer-events-none"></div>
-                  <span className="relative z-10">{s.icon}</span>
+                <div className="flex min-h-[56px] items-center gap-4">
+                  <div className="relative grid size-14 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-md" style={{ clipPath: hexClip }}>
+                    <div className="absolute inset-0 h-[55%] pointer-events-none bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay"></div>
+                    <div className="absolute inset-x-0 bottom-0 h-[40%] pointer-events-none bg-gradient-to-t from-amber-800/35 to-transparent"></div>
+                    <span className="relative z-10">{s.icon}</span>
+                  </div>
+                  <h3 className="font-heading text-lg font-black leading-tight text-text-main">
+                    {s.title}
+                  </h3>
                 </div>
-                <h3 className="min-h-[84px] font-heading text-lg font-black text-text-main">
-                  {s.title}
-                </h3>
                 <p className="text-sm leading-relaxed text-text-muted">
                   {s.body}
                 </p>
@@ -200,8 +202,7 @@ export default function ServiciosPage() {
       <section id="ciberseguridad" className="dark-technical-grid bg-text-main px-6 py-20 sm:py-28 scroll-mt-24">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="flex items-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-golden-pollen">
-              <span className="h-1.5 w-1.5 rounded-full bg-white" />
+            <p className="text-sm font-black uppercase tracking-[0.22em] text-golden-pollen">
               Ciberseguridad Resiliente
             </p>
             <h2 className="mt-3 font-heading text-3xl font-black leading-tight text-white sm:text-4xl">
@@ -275,7 +276,7 @@ export default function ServiciosPage() {
                 </h3>
                 <p
                   className={`mt-1 text-sm font-medium ${
-                    plan.highlight ? "text-white/60" : "text-text-muted"
+                    plan.highlight ? "text-white/85" : "text-text-muted"
                   }`}
                 >
                   {plan.tagline}
@@ -300,7 +301,7 @@ export default function ServiciosPage() {
                   href={waLink(`Hola equipo Beeploy, me interesa evaluar la integración de la estrategia de ${plan.tier}.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`mt-8 inline-flex min-h-12 w-full items-center justify-center rounded-full text-sm font-black transition hover:scale-[1.02] ${
+                  className={`mt-8 inline-flex h-auto min-h-[3rem] w-full items-center justify-center rounded-[2rem] px-4 py-3 text-center text-sm font-black leading-tight transition hover:scale-[1.02] ${
                     plan.highlight
                       ? "bg-golden-pollen text-text-main hover:bg-golden-hover"
                       : "bg-text-main text-white hover:bg-golden-pollen hover:text-text-main"

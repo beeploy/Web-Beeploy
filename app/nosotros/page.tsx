@@ -171,8 +171,7 @@ const values = [
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <p className="flex items-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-text-main">
-      <span className="h-1.5 w-1.5 rounded-full bg-golden-pollen" />
+    <p className="text-sm font-black uppercase tracking-[0.22em] text-text-main">
       {children}
     </p>
   );
@@ -230,8 +229,7 @@ export default function NosotrosPage() {
                 key={block.title}
                 className="rounded-lg border border-text-main/10 bg-white p-7 shadow-[0_10px_32px_rgba(26,26,26,0.05)] sm:p-8"
               >
-                <span className="mb-2 inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-neutral-800 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
-                  <span className="h-1.5 w-1.5 rounded-full bg-golden-pollen" />
+                <span className="mb-2 inline-block rounded-full border border-neutral-200 bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-neutral-800 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
                   {block.kicker}
                 </span>
                 <h3 className="mt-3 font-heading text-2xl font-black leading-tight text-text-main">
@@ -250,14 +248,13 @@ export default function NosotrosPage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div className="lg:sticky lg:top-32 lg:h-fit">
-              <p className="flex items-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-golden-pollen">
-                <span className="h-1.5 w-1.5 rounded-full bg-white" />
+              <p className="text-sm font-black uppercase tracking-[0.22em] text-golden-pollen">
                 Filosofía de Ingeniería
               </p>
               <h2 className="mt-4 text-balance font-heading text-3xl font-black leading-tight sm:text-5xl">
                 Inspiración natural, ejecución técnica rigurosa.
               </h2>
-              <p className="mt-6 text-lg leading-8 text-white/72">
+              <p className="mt-6 text-lg leading-8 text-white/90">
                 La abeja melipona es nativa, no posee aguijón, construye panales eficientes 
                 y actúa mediante inteligencia colectiva. Beeploy interioriza estos atributos biológicos 
                 como principios fundacionales para desarrollar software modular, resiliente y colaborativo.
@@ -269,15 +266,17 @@ export default function NosotrosPage() {
                   key={item.title}
                   className="rounded-lg border border-white/10 bg-white p-6 text-text-main shadow-[0_18px_60px_rgba(0,0,0,0.18)]"
                 >
-                  <div
-                    className="mb-5 relative grid size-14 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-lg"
-                    style={{ clipPath: hexClip }}
-                  >
-                    <div className="absolute inset-0 h-[55%] bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay pointer-events-none" />
-                    <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-amber-800/35 to-transparent pointer-events-none" />
-                    <span className="relative z-10">{item.icon}</span>
+                  <div className="mb-4 flex items-center gap-4">
+                    <div
+                      className="relative grid size-14 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-lg"
+                      style={{ clipPath: hexClip }}
+                    >
+                      <div className="absolute inset-0 h-[55%] pointer-events-none bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay" />
+                      <div className="absolute inset-x-0 bottom-0 h-[40%] pointer-events-none bg-gradient-to-t from-amber-800/35 to-transparent" />
+                      <span className="relative z-10">{item.icon}</span>
+                    </div>
+                    <h3 className="font-heading text-xl font-black">{item.title}</h3>
                   </div>
-                  <h3 className="font-heading text-xl font-black">{item.title}</h3>
                   <p className="mt-3 text-sm leading-7 text-text-muted">{item.body}</p>
                 </article>
               ))}
@@ -308,13 +307,8 @@ export default function NosotrosPage() {
               </div>
             </div>
             <div className="rounded-lg border border-text-main/10 bg-white p-8 shadow-soft">
-              <div className="mb-2 relative inline-grid size-14 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-lg" style={{ clipPath: hexClip }}>
-                <div className="absolute inset-0 h-[55%] bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay pointer-events-none"></div>
-                <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-amber-800/35 to-transparent pointer-events-none"></div>
-                <span className="relative z-10 font-heading text-3xl font-black text-amber-950">5</span>
-              </div>
-              <h3 className="mt-4 font-heading text-2xl font-black text-text-main">
-                Filtros de decisión B2B
+              <h3 className="font-heading text-2xl font-black leading-tight text-text-main">
+                Los 5 filtros de decisión B2B
               </h3>
               <ul className="mt-6 grid gap-3" role="list">
                 {[
@@ -386,17 +380,19 @@ export default function NosotrosPage() {
                   key={principle.title}
                   className="rounded-lg border border-text-main/10 bg-white p-6 shadow-[0_10px_30px_rgba(26,26,26,0.05)]"
                 >
-                  <div
-                    className="mb-4 relative grid size-12 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-lg"
-                    style={{ clipPath: hexClip }}
-                  >
-                    <div className="absolute inset-0 h-[55%] bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay pointer-events-none" />
-                    <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-amber-800/35 to-transparent pointer-events-none" />
-                    <span className="relative z-10">{principle.icon}</span>
+                  <div className="mb-4 flex items-center gap-4">
+                    <div
+                      className="relative grid size-12 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-lg"
+                      style={{ clipPath: hexClip }}
+                    >
+                      <div className="absolute inset-0 h-[55%] pointer-events-none bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay" />
+                      <div className="absolute inset-x-0 bottom-0 h-[40%] pointer-events-none bg-gradient-to-t from-amber-800/35 to-transparent" />
+                      <span className="relative z-10">{principle.icon}</span>
+                    </div>
+                    <h3 className="font-heading text-xl font-black text-text-main">
+                      {principle.title}
+                    </h3>
                   </div>
-                  <h3 className="font-heading text-xl font-black text-text-main">
-                    {principle.title}
-                  </h3>
                   <p className="mt-3 text-sm leading-7 text-text-muted">
                     {principle.body}
                   </p>
@@ -410,7 +406,7 @@ export default function NosotrosPage() {
       <section className="px-6 pb-20 sm:pb-28">
         <div className="mx-auto max-w-7xl">
           <div className="rounded-lg border border-text-main/10 bg-white p-8 shadow-soft sm:p-10">
-            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div>
                 <Eyebrow>Impacto estructural</Eyebrow>
                 <h2 className="mt-4 text-balance font-heading text-3xl font-black leading-tight text-text-main sm:text-4xl">
@@ -421,8 +417,7 @@ export default function NosotrosPage() {
                 {audienceMessages.map((message) => (
                   <article key={message.label} className="border-t border-text-main/10 pt-5">
                     <div className="mb-1">
-                      <span className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-neutral-800 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
-                        <span className="h-1.5 w-1.5 rounded-full bg-golden-pollen" />
+                      <span className="inline-block rounded-full border border-neutral-200 bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-neutral-800 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
                         {message.label}
                       </span>
                     </div>
@@ -441,7 +436,7 @@ export default function NosotrosPage() {
       </section>
 
       <section className="px-6 pb-20 sm:pb-28">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <Eyebrow>El Manifiesto Central</Eyebrow>
             <h2 className="mt-4 text-balance font-heading text-3xl font-black leading-tight text-text-main sm:text-5xl">
@@ -465,10 +460,12 @@ export default function NosotrosPage() {
                 key={value}
                 className="rounded-lg border border-text-main/10 bg-white p-5 shadow-[0_10px_30px_rgba(26,26,26,0.045)]"
               >
-                <div className="mb-4 inline-flex size-9 items-center justify-center hexagon bg-text-main text-xs font-black text-golden-pollen">
-                  {String(index + 1).padStart(2, "0")}
+                <div className="mb-4 flex min-h-[48px] items-center gap-4">
+                  <div className="inline-flex size-9 shrink-0 items-center justify-center hexagon bg-golden-pollen text-xs font-black text-text-main">
+                    {String(index + 1).padStart(2, "0")}
+                  </div>
+                  <p className="font-heading text-lg font-black leading-tight text-text-main">{value}</p>
                 </div>
-                <p className="font-heading text-lg font-black text-text-main">{value}</p>
               </div>
             ))}
           </div>
@@ -477,14 +474,13 @@ export default function NosotrosPage() {
 
       <section className="dark-technical-grid bg-text-main px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="flex items-center justify-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-golden-pollen">
-            <span className="h-1.5 w-1.5 rounded-full bg-white" />
+          <p className="text-sm font-black uppercase tracking-[0.22em] text-golden-pollen">
             Compromiso Social Tecnológico
           </p>
           <h2 className="mt-4 font-heading text-3xl font-black leading-tight text-white sm:text-5xl">
             Tu inversión tecnológica también edifica infraestructuras de equidad.
           </h2>
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-white/70">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-white/90">
             Cameyapp es el brazo de visibilidad e inclusión de nuestro ecosistema corporativo.
             Al implementar soluciones empresariales con Beeploy, permites que continuemos expandiendo la plataforma tecnológica que conecta el talento latinoamericano con oportunidades reales de empleo digno.
           </p>

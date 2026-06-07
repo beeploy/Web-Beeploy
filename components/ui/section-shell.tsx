@@ -16,12 +16,11 @@ export function SectionShell({
   className = "",
 }: SectionShellProps) {
   return (
-    <section id={id} className={`px-6 py-20 sm:py-24 ${className}`}>
-      <div className="mx-auto max-w-7xl">
+    <section id={id} className={`px-4 py-16 sm:px-6 sm:py-24 ${className}`}>
+      <div className="mx-auto max-w-7xl rounded-[2rem] border border-neutral-100 bg-white/95 p-6 shadow-[0_8px_30px_rgba(0,0,0,0.06)] backdrop-blur-sm sm:p-10 md:p-16">
         <div className="max-w-3xl">
           {eyebrow ? (
             <p className="flex items-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-text-main">
-              <span className="h-1.5 w-1.5 rounded-full bg-golden-pollen" />
               {eyebrow}
             </p>
           ) : null}

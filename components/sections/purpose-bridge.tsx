@@ -12,7 +12,7 @@ export function PurposeBridge() {
             <h2 className="mt-4 text-balance font-heading text-4xl font-black leading-tight sm:text-5xl">
               La infraestructura que fortalece tu empresa también democratiza el acceso al talento.
             </h2>
-            <p className="mt-6 text-lg leading-8 text-white/70">
+            <p className="mt-6 text-lg leading-8 text-white/90">
               Cameyapp no compite con nuestro ecosistema, lo complementa. Mientras nosotros construimos las capacidades tecnológicas de tu organización, tú propicias la plataforma de empleabilidad directa en Latinoamérica.
             </p>
             <div className="mt-8 flex justify-center">

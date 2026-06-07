@@ -44,39 +44,33 @@ export function ServicePillars(): JSX.Element {
         {services.map((service, index) => (
           <article
             key={service.title}
-            className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-100 bg-white p-10 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-[6px] hover:shadow-[0_0_0_1px_rgba(255,204,51,0.15),0_10px_30px_rgba(255,204,51,0.10)]"
+            className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-surface p-10 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-[6px] hover:shadow-[0_0_0_1px_rgba(255,204,51,0.15),0_10px_30px_rgba(255,204,51,0.10)]"
           >
-            <div className="mb-6 flex items-start gap-5 min-h-[80px]">
-              {/* Glossy honey hexagon — same treatment as HeroHoneycomb */}
-              <div
-                className="relative grid size-16 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-lg"
-                style={{ clipPath: hexClip }}
-              >
-                {/* Top gloss */}
-                <div className="absolute inset-0 h-[55%] bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay pointer-events-none"></div>
-                {/* Bottom depth */}
-                <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-amber-800/35 to-transparent pointer-events-none"></div>
-                <span className="relative z-10 font-heading text-lg font-black text-amber-950 drop-shadow-sm">
-                  0{index + 1}
-                </span>
-              </div>
-              <h3 className="line-clamp-2 pt-1.5 font-heading text-2xl font-black text-neutral-900">
+            {/* Watermark Number */}
+            <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center select-none overflow-hidden">
+              <span className="font-heading text-[320px] font-black leading-none text-golden-pollen/20 transition-colors duration-300 group-hover:text-golden-pollen/30">
+                {index + 1}
+              </span>
+            </div>
+
+            <div className="relative z-10 mb-6 flex min-h-[40px] items-center">
+              <h3 className="font-heading text-2xl font-black text-neutral-900">
                 {service.title}
               </h3>
             </div>
 
-            <div className="flex flex-1 flex-col">
+            <div className="relative z-10 flex flex-1 flex-col">
               <p className="font-sans text-base font-medium leading-relaxed text-text-main/90">
                 {service.body}
               </p>
-              <p className="mt-4 text-sm leading-relaxed text-text-muted">
+              <p className="mt-4 text-sm font-semibold leading-relaxed text-text-main/80">
                 {service.proof}
               </p>
             </div>
 
             <Link
               href={`/servicios#${service.hrefId}`}
-              className="mx-auto mt-10 inline-flex min-h-12 w-4/5 items-center justify-center rounded-full bg-golden-pollen px-6 py-3 text-sm font-black text-text-main transition hover:bg-golden-hover"
+              className="relative z-10 mx-auto mt-10 inline-flex h-auto min-h-[3rem] w-4/5 items-center justify-center rounded-[2rem] bg-golden-pollen px-6 py-3 text-center text-sm font-black leading-tight text-text-main transition hover:bg-golden-hover"
             >
               Integrar esta solución
             </Link>

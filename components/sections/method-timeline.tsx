@@ -22,7 +22,7 @@ const steps = [
 export function MethodTimeline() {
   return (
     <SectionShell
-      className=""
+      className="bg-warm"
       eyebrow="Framework Metodológico"
       title="Ingeniería precisa. Explicaciones nítidas."
       intro="La improvisación tecnológica representa un riesgo corporativo crítico. Nuestro marco de trabajo protege la inversión garantizando que cada fase resuelva un desafío empresarial genuino y auditable."
@@ -31,7 +31,7 @@ export function MethodTimeline() {
         {steps.map((step, index) => (
           <li
             key={step.title}
-            className="relative rounded-2xl border border-neutral-100 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-6"
+            className="relative rounded-2xl border border-neutral-200 bg-surface shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-6"
           >
             <div className="mb-2 inline-flex items-center justify-center rounded-md bg-text-main px-3 py-1 text-xs font-black uppercase tracking-widest text-golden-pollen">
               Fase 0{index + 1}

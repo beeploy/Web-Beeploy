@@ -14,6 +14,7 @@ export function FitSignals() {
 
   return (
     <SectionShell
+      className="bg-warm"
       eyebrow="Tensión Estructural"
       title="Síntomas inequívocos de que tu infraestructura actual frena tu competitividad."
     >
@@ -21,7 +22,7 @@ export function FitSignals() {
         {signals.map((signal) => (
           <li
             key={signal}
-            className="flex min-h-28 gap-4 rounded-2xl border border-neutral-100 bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.04)]"
+            className="flex min-h-28 gap-4 rounded-2xl border border-neutral-200 bg-surface p-6 shadow-[0_8px_30px_rgba(0,0,0,0.04)]"
           >
             {/* Micro-hexágono glossy — sin ícono, sólo miel */}
             <div

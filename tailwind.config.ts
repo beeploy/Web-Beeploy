@@ -11,7 +11,7 @@ const config: Config = {
         background: "#FFFCF8",
         surface: "#FFFFFF",
         "text-main": "#1A1A1A",
-        "text-muted": "#4A4A4A",
+        "text-muted": "#2A2A2A",
         "golden-pollen": "#FFCC33",
         "golden-hover": "#E6B800",
       },

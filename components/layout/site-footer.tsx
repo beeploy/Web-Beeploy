@@ -33,21 +33,21 @@ export function SiteFooter() {
           <Link href="/" aria-label="Ir al inicio de Beeploy">
             <BeeployMark inverse />
           </Link>
-          <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/70">
+          <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/85">
             Inteligencia colectiva y arquitectura modular consolidada como catalizador de resiliencia empresarial.
           </p>
         </div>
 
         {/* Columna Central: Contacto */}
         <div className="flex flex-col">
-          <h3 className="text-xs font-bold uppercase tracking-wider text-white/50 mb-4">
+          <h3 className="text-xs font-bold uppercase tracking-wider text-white/80 mb-4">
             Auditoría Estructural
           </h3>
           <a
             href="https://wa.me/593997963617"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex w-fit items-center gap-3 text-white/70 transition-colors duration-200 hover:text-amber-500"
+            className="group flex w-fit items-center gap-3 text-white/85 transition-colors duration-200 hover:text-amber-500"
           >
             <Phone className="w-5 h-5 transition-colors duration-200 group-hover:text-amber-500" />
             <span className="text-sm font-medium">+593 99 796 3617</span>
@@ -56,7 +56,7 @@ export function SiteFooter() {
 
         {/* Columna Derecha: Redes Sociales */}
         <div className="flex flex-col">
-          <h3 className="text-xs font-bold uppercase tracking-wider text-white/50 mb-4">
+          <h3 className="text-xs font-bold uppercase tracking-wider text-white/80 mb-4">
             Nodos del Ecosistema
           </h3>
           <div className="flex gap-5 items-center">
@@ -65,7 +65,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-white/70 transition-all duration-200 hover:text-amber-500 hover:scale-110"
+              className="text-white/85 transition-all duration-200 hover:text-amber-500 hover:scale-110"
             >
               <Github className="w-[22px] h-[22px]" />
             </a>
@@ -74,7 +74,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-white/70 transition-all duration-200 hover:text-amber-500 hover:scale-110"
+              className="text-white/85 transition-all duration-200 hover:text-amber-500 hover:scale-110"
             >
               <Instagram className="w-[22px] h-[22px]" />
             </a>
@@ -83,7 +83,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-white/70 transition-all duration-200 hover:text-amber-500 hover:scale-110"
+              className="text-white/85 transition-all duration-200 hover:text-amber-500 hover:scale-110"
             >
               <Linkedin className="w-[22px] h-[22px]" />
             </a>
@@ -92,7 +92,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X (Twitter)"
-              className="text-white/70 transition-all duration-200 hover:text-amber-500 hover:scale-110"
+              className="text-white/85 transition-all duration-200 hover:text-amber-500 hover:scale-110"
             >
               <Twitter className="w-[22px] h-[22px]" />
             </a>
@@ -101,7 +101,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"
-              className="text-white/70 transition-all duration-200 hover:text-amber-500 hover:scale-110"
+              className="text-white/85 transition-all duration-200 hover:text-amber-500 hover:scale-110"
             >
               <TikTokIcon className="w-[26px] h-[26px]" />
             </a>

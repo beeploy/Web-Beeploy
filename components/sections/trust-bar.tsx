@@ -15,21 +15,21 @@ export function TrustBar() {
         {items.map((item) => {
           const Icon = item.icon;
           return (
-            <div key={item.text} className="bg-white p-7 flex flex-col h-full items-start rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-neutral-100">
-              <div
-                className="mb-6 relative grid size-14 h-12 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-lg"
-                style={{ clipPath: hexClip }}
-              >
-                <div className="absolute inset-0 h-[55%] bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay pointer-events-none"></div>
-                <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-amber-800/35 to-transparent pointer-events-none"></div>
-                <Icon className="relative z-10 size-6 text-amber-950" />
-              </div>
-              <div className="min-h-[64px]">
-                <p className="font-heading text-xl font-black text-neutral-900">
+            <div key={item.text} className="bg-surface p-7 flex flex-col h-full items-start rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-neutral-200">
+              <div className="mb-4 flex min-h-[56px] items-center gap-4">
+                <div
+                  className="relative grid size-14 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-lg"
+                  style={{ clipPath: hexClip }}
+                >
+                  <div className="absolute inset-0 h-[55%] pointer-events-none bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay" />
+                  <div className="absolute inset-x-0 bottom-0 h-[40%] pointer-events-none bg-gradient-to-t from-amber-800/35 to-transparent" />
+                  <Icon className="relative z-10 size-6 text-amber-950" />
+                </div>
+                <h3 className="font-heading text-xl font-black leading-tight text-neutral-900">
                   {item.text}
-                </p>
+                </h3>
               </div>
-              <p className="text-neutral-600 text-sm mt-2 leading-relaxed">
+              <p className="mt-2 text-sm font-medium leading-relaxed text-neutral-800">
                 {item.desc}
               </p>
             </div>
