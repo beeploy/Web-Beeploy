@@ -177,8 +177,8 @@ export default function NosotrosPage() {
       />
 
       {/* 1 · Clara */}
-      <section className="section-light w-full px-6 py-24">
-        <div className="mx-auto max-w-7xl">
+      <section className="section-light page-intro w-full px-6 py-16 sm:py-20">
+        <div className="mx-auto w-full max-w-7xl">
           <div className="mb-8">
             <SectionBadge>Manifiesto Estratégico</SectionBadge>
           </div>

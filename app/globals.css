@@ -75,6 +75,14 @@ a {
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);
 }
 
+/* Primera sección: llena el viewport bajo el header fijo (layout pt-20) */
+.page-intro {
+  display: flex;
+  min-height: calc(100dvh - 5rem);
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

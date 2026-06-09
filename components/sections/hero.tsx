@@ -59,7 +59,7 @@ function HeroHoneycomb() {
 
 export function Hero() {
   return (
-    <section className="section-light w-full px-6 py-24">
+    <section className="section-light page-intro w-full px-6 py-16 sm:py-20">
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1fr_0.92fr]">
         <div className="relative z-10 max-w-3xl">
           <div className="mb-6">
