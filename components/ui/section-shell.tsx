@@ -1,3 +1,5 @@
+import { Eyebrow } from "@/components/ui/eyebrow";
+
 type SectionShellProps = {
   id?: string;
   eyebrow?: string;
@@ -5,6 +7,7 @@ type SectionShellProps = {
   intro?: string;
   children: React.ReactNode;
   className?: string;
+  variant?: "light" | "dark";
 };
 
 export function SectionShell({
@@ -14,21 +17,33 @@ export function SectionShell({
   intro,
   children,
   className = "",
+  variant = "light",
 }: SectionShellProps) {
+  const isDark = variant === "dark";
+
   return (
-    <section id={id} className={`px-4 py-16 sm:px-6 sm:py-24 ${className}`}>
-      <div className="mx-auto max-w-7xl rounded-[2rem] border border-neutral-100 bg-white/95 p-6 shadow-[0_8px_30px_rgba(0,0,0,0.06)] backdrop-blur-sm sm:p-10 md:p-16">
-        <div className="max-w-3xl">
-          {eyebrow ? (
-            <p className="flex items-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-text-main">
-              {eyebrow}
-            </p>
-          ) : null}
-          <h2 className="mt-3 font-heading text-3xl font-black leading-tight text-text-main sm:text-4xl">
+    <section
+      id={id}
+      className={`w-full px-6 py-24 ${isDark ? "section-dark text-white" : "section-light"} ${className}`}
+    >
+      <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-3xl">
+          {eyebrow ? <Eyebrow dark={isDark}>{eyebrow}</Eyebrow> : null}
+          <h2
+            className={`mt-3 font-heading text-3xl font-black leading-tight sm:text-4xl ${
+              isDark ? "text-white" : "text-text-main"
+            }`}
+          >
             {title}
           </h2>
           {intro ? (
-            <p className="mt-4 text-lg leading-8 text-text-muted">{intro}</p>
+            <p
+              className={`mt-4 text-lg leading-relaxed ${
+                isDark ? "text-white/90" : "text-text-muted"
+              }`}
+            >
+              {intro}
+            </p>
           ) : null}
         </div>
         {children}

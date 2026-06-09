@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SectionShell } from "@/components/ui/section-shell";
+import { Eyebrow, SectionBadge } from "@/components/ui/eyebrow";
 import { SquareCode, Brain, Workflow, Database } from "lucide-react";
 import { hexClip } from "@/components/ui/hexClip";
 
@@ -8,8 +9,6 @@ export const metadata: Metadata = {
   description:
     "Infraestructura digital, desarrollo a medida, inteligencia artificial y ciberseguridad resiliente para empresas en Latinoamérica. Transformamos complejidad en crecimiento real.",
 };
-
-/* ─── Datos ──────────────────────────────────────────────── */
 
 const devSolutions = [
   {
@@ -109,11 +108,9 @@ function waLink(message: string) {
   return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
-/* ─── Componentes internos de página ─────────────────────── */
-
 function CheckIcon({ highlight }: { highlight?: boolean }) {
   return (
-    <div className={`mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full ${highlight ? 'bg-golden-pollen text-neutral-900' : 'bg-neutral-900 text-golden-pollen'}`}>
+    <div className={`mt-0.5 flex size-5 shrink-0 items-center justify-center ${highlight ? "bg-golden-pollen text-neutral-900" : "bg-golden-pollen text-neutral-900"}`}>
       <svg viewBox="0 0 16 16" className="size-3" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M3 8l3.5 3.5L13 4" />
       </svg>
@@ -121,75 +118,85 @@ function CheckIcon({ highlight }: { highlight?: boolean }) {
   );
 }
 
-/* ─── Page ───────────────────────────────────────────────── */
-
 export default function ServiciosPage() {
   return (
     <main id="contenido">
+      <section className="section-light w-full px-6 py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-8">
+            <SectionBadge>Ecosistema de Soluciones</SectionBadge>
+          </div>
 
-      {/* ── Hero ──────────────────────────────────────────── */}
-      <section className="px-6 pb-16 pt-20 text-center sm:pb-24 sm:pt-28">
-        <div className="mx-auto max-w-4xl">
-          <p className="mb-5 inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-900 text-xs font-bold uppercase tracking-wider">
-            ECOSISTEMA DE SOLUCIONES
-          </p>
-          <h1 className="text-balance font-heading text-4xl font-black leading-[1.05] text-text-main sm:text-5xl lg:text-6xl">
-            Tecnología diseñada para adaptarse al negocio, no al revés.
-          </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-text-muted">
-            La complejidad tecnológica no debe ser una carga operativa. Diseñamos infraestructuras, automatizaciones y sistemas resilientes que traducen inversión en tiempo recuperado, seguridad y crecimiento escalable.
-          </p>
+          <div className="grid gap-12 lg:grid-cols-[1fr_0.82fr] lg:items-center">
+            <div>
+              <h1 className="text-balance font-heading text-5xl font-black leading-[1.06] text-text-main sm:text-6xl lg:text-[4.5rem]">
+                Tecnología diseñada para adaptarse al negocio, no al revés.
+              </h1>
+            </div>
+
+            <div className="flex flex-col gap-6 lg:border-l lg:border-text-main/10 lg:pl-12">
+              <p className="text-lg leading-relaxed text-text-muted">
+                La complejidad tecnológica no debe ser una carga operativa. Diseñamos infraestructuras, automatizaciones y sistemas resilientes que traducen inversión en tiempo recuperado, seguridad y crecimiento escalable.
+              </p>
+              <blockquote className="relative border border-amber-200 bg-amber-50/60 px-6 py-5">
+                <span
+                  aria-hidden="true"
+                  className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-amber-400 to-amber-600"
+                />
+                <p className="text-base font-bold italic leading-relaxed text-text-main">
+                  &ldquo;Infraestructura modular + Seguridad + Automatización = Autonomía operativa&rdquo;
+                </p>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* ── Sección 1: Desarrollo a la Medida ────────────── */}
       <SectionShell
         id="desarrollo"
+        variant="dark"
         eyebrow="Arquitectura de Software"
         title="Construimos sistemas preparados para evolucionar."
         className="scroll-mt-24"
       >
         <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
-
-          {/* Columna problema */}
-          <div className="rounded-xl border border-text-main/10 bg-background p-8 sm:p-10">
-            <span className="mb-4 block text-xs font-bold uppercase tracking-widest text-text-muted">
+          <div className="border border-white/10 bg-white/5 p-8 sm:p-10">
+            <span className="mb-4 block text-xs font-bold uppercase tracking-widest text-golden-pollen">
               La Tensión Operativa
             </span>
-            <p className="font-heading text-2xl font-black leading-snug text-text-main sm:text-3xl">
+            <p className="font-heading text-2xl font-black leading-snug sm:text-3xl">
               Procesos manuales, sistemas desconectados y tecnologías rígidas que limitan el potencial del negocio.
             </p>
-            <p className="mt-5 text-base leading-7 text-text-muted">
+            <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-white/85">
               Cuando el equipo operativo debe adaptarse a un software cerrado, se generan ineficiencias críticas. Nosotros analizamos tu flujo real de trabajo para diseñar una infraestructura modular que se integra de manera transparente, erradicando cuellos de botella y permitiendo que la empresa crezca sin multiplicar su complejidad.
             </p>
             <a
               href={waLink("Hola equipo de Beeploy. Quiero agendar un diagnóstico tecnológico para analizar mi infraestructura.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-golden-pollen px-7 py-3 text-sm font-black text-text-main transition hover:bg-golden-hover"
+              className="mt-8 inline-flex min-h-12 items-center justify-center bg-golden-pollen px-7 py-3 text-sm font-black text-text-main transition-all duration-300 ease-in-out hover:scale-105 hover:bg-golden-hover"
             >
               Agendar diagnóstico estructural →
             </a>
           </div>
 
-          {/* Columna soluciones */}
           <ul className="grid gap-5 sm:grid-cols-2" role="list">
             {devSolutions.map((s) => (
               <li
                 key={s.title}
-                className="flex flex-col gap-3 rounded-xl border border-text-main/10 bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft"
+                className="flex flex-col gap-3 border border-white/10 bg-white/5 p-6 transition-all duration-300 ease-in-out hover:scale-105"
               >
                 <div className="flex min-h-[56px] items-center gap-4">
                   <div className="relative grid size-14 shrink-0 place-items-center bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 shadow-md" style={{ clipPath: hexClip }}>
-                    <div className="absolute inset-0 h-[55%] pointer-events-none bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay"></div>
-                    <div className="absolute inset-x-0 bottom-0 h-[40%] pointer-events-none bg-gradient-to-t from-amber-800/35 to-transparent"></div>
+                    <div className="absolute inset-0 h-[55%] pointer-events-none bg-gradient-to-b from-white/65 via-white/10 to-transparent mix-blend-overlay" />
+                    <div className="absolute inset-x-0 bottom-0 h-[40%] pointer-events-none bg-gradient-to-t from-amber-800/35 to-transparent" />
                     <span className="relative z-10">{s.icon}</span>
                   </div>
-                  <h3 className="font-heading text-lg font-black leading-tight text-text-main">
+                  <h3 className="font-heading text-lg font-black leading-tight text-white">
                     {s.title}
                   </h3>
                 </div>
-                <p className="text-sm leading-relaxed text-text-muted">
+                <p className="mx-auto max-w-3xl text-sm leading-relaxed text-white/85">
                   {s.body}
                 </p>
               </li>
@@ -198,17 +205,14 @@ export default function ServiciosPage() {
         </div>
       </SectionShell>
 
-      {/* ── Sección 2: Ciberseguridad (franja oscura) ──────── */}
-      <section id="ciberseguridad" className="dark-technical-grid bg-text-main px-6 py-20 sm:py-28 scroll-mt-24">
+      <section id="ciberseguridad" className="section-light w-full scroll-mt-24 px-6 py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="max-w-3xl">
-            <p className="text-sm font-black uppercase tracking-[0.22em] text-golden-pollen">
-              Ciberseguridad Resiliente
-            </p>
-            <h2 className="mt-3 font-heading text-3xl font-black leading-tight text-white sm:text-4xl">
+          <div className="mx-auto max-w-3xl">
+            <Eyebrow>Ciberseguridad Resiliente</Eyebrow>
+            <h2 className="mt-3 font-heading text-3xl font-black leading-tight text-text-main sm:text-4xl">
               Protegemos la continuidad y reputación de tu empresa.
             </h2>
-            <p className="mt-4 text-lg leading-8 text-white/90">
+            <p className="mt-4 text-lg leading-relaxed text-text-muted">
               Una arquitectura de software no es confiable si es vulnerable. Un incidente de seguridad detiene operaciones y destruye confianza. Nosotros detectamos, analizamos y cerramos brechas estructurales antes de que representen un riesgo financiero.
             </p>
           </div>
@@ -217,22 +221,22 @@ export default function ServiciosPage() {
             {cyberCards.map((card) => (
               <article
                 key={card.num}
-                className="group relative flex flex-col overflow-hidden rounded-xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-golden-pollen/30 hover:bg-white/8"
+                className="group relative flex flex-col overflow-hidden border border-text-main/10 bg-white p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out hover:scale-105"
               >
                 <span className="mb-5 font-heading text-4xl font-black text-golden-pollen/80 transition-colors duration-300 group-hover:text-golden-pollen">
                   {card.num}
                 </span>
-                <h3 className="font-heading text-xl font-black text-white">
+                <h3 className="font-heading text-xl font-black text-text-main">
                   {card.title}
                 </h3>
-                <p className="mt-3 flex-1 text-[15px] leading-relaxed text-white/90">
+                <p className="mx-auto mt-3 max-w-3xl flex-1 text-[15px] leading-relaxed text-text-muted">
                   {card.body}
                 </p>
                 <a
                   href={waLink(`Hola Beeploy, necesitamos evaluar la seguridad de nuestra infraestructura mediante una ${card.title}.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-8 inline-flex min-h-11 items-center justify-center rounded-full border border-white/20 px-5 py-2.5 text-sm font-bold text-white/90 transition hover:border-golden-pollen hover:bg-golden-pollen hover:text-text-main"
+                  className="mt-8 inline-flex min-h-11 items-center justify-center border border-text-main/20 px-5 py-2.5 text-sm font-bold text-text-main transition-all duration-300 ease-in-out hover:scale-105 hover:border-golden-pollen hover:bg-golden-pollen"
                 >
                   Solicitar auditoría técnica
                 </a>
@@ -242,9 +246,9 @@ export default function ServiciosPage() {
         </div>
       </section>
 
-      {/* ── Sección 3: Visibilidad y Adquisición Digital ──────── */}
       <SectionShell
         id="datos-ia"
+        variant="dark"
         eyebrow="Estrategia de Visibilidad"
         title="Tecnología que impulsa la adquisición comercial."
         intro="Una infraestructura robusta necesita visibilidad para polinizar el mercado. Integramos canales digitales, automatización y métricas claras para que cada esfuerzo de comunicación se convierta en una oportunidad medible."
@@ -254,10 +258,10 @@ export default function ServiciosPage() {
           {marketingPlans.map((plan) => (
             <article
               key={plan.tier}
-              className={`relative flex flex-col overflow-hidden rounded-xl border transition-all duration-300 hover:-translate-y-1 hover:shadow-soft ${
+              className={`relative flex flex-col overflow-hidden border transition-all duration-300 ease-in-out hover:scale-105 ${
                 plan.highlight
-                  ? "border-golden-pollen bg-text-main text-white shadow-[0_0_0_1px_rgba(255,204,51,0.25),0_12px_32px_rgba(255,204,51,0.12)]"
-                  : "border-text-main/10 bg-surface"
+                  ? "border-golden-pollen bg-white/10 text-white shadow-[0_0_0_1px_rgba(255,204,51,0.25),0_12px_32px_rgba(255,204,51,0.12)]"
+                  : "border-white/10 bg-white/5"
               }`}
             >
               {plan.highlight && (
@@ -267,18 +271,10 @@ export default function ServiciosPage() {
               )}
 
               <div className="flex flex-1 flex-col p-7">
-                <h3
-                  className={`font-heading text-2xl font-black ${
-                    plan.highlight ? "text-white" : "text-text-main"
-                  }`}
-                >
+                <h3 className={`font-heading text-2xl font-black ${plan.highlight ? "text-white" : "text-white"}`}>
                   {plan.tier}
                 </h3>
-                <p
-                  className={`mt-1 text-sm font-medium ${
-                    plan.highlight ? "text-white/85" : "text-text-muted"
-                  }`}
-                >
+                <p className={`mt-1 text-sm font-medium ${plan.highlight ? "text-white/85" : "text-white/85"}`}>
                   {plan.tagline}
                 </p>
 
@@ -286,11 +282,7 @@ export default function ServiciosPage() {
                   {plan.features.map((feat) => (
                     <li key={feat} className="flex items-start gap-3">
                       <CheckIcon highlight={plan.highlight} />
-                      <span
-                        className={`text-[15px] font-medium leading-relaxed ${
-                          plan.highlight ? "text-white/90" : "text-neutral-800"
-                        }`}
-                      >
+                      <span className="text-[15px] font-medium leading-relaxed text-white/90">
                         {feat}
                       </span>
                     </li>
@@ -301,10 +293,10 @@ export default function ServiciosPage() {
                   href={waLink(`Hola equipo Beeploy, me interesa evaluar la integración de la estrategia de ${plan.tier}.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`mt-8 inline-flex h-auto min-h-[3rem] w-full items-center justify-center rounded-[2rem] px-4 py-3 text-center text-sm font-black leading-tight transition hover:scale-[1.02] ${
+                  className={`mt-8 inline-flex h-auto min-h-[3rem] w-full items-center justify-center px-4 py-3 text-center text-sm font-black leading-tight transition-all duration-300 ease-in-out hover:scale-105 ${
                     plan.highlight
                       ? "bg-golden-pollen text-text-main hover:bg-golden-hover"
-                      : "bg-text-main text-white hover:bg-golden-pollen hover:text-text-main"
+                      : "bg-golden-pollen text-text-main hover:bg-golden-hover"
                   }`}
                 >
                   {plan.cta}
@@ -313,28 +305,25 @@ export default function ServiciosPage() {
             </article>
           ))}
         </div>
-      </SectionShell>
 
-      {/* ── Final CTA ─────────────────────────────────────── */}
-      <section className="px-6 pb-24 pt-8">
-        <div className="mx-auto max-w-7xl rounded-xl border border-text-main/10 bg-surface p-8 text-center shadow-soft sm:p-14">
-          <h2 className="mx-auto max-w-3xl font-heading text-3xl font-black leading-tight text-text-main sm:text-4xl">
+        <div className="mx-auto mt-20 max-w-3xl border-t border-white/10 pt-20 text-center">
+          <Eyebrow dark>Diagnóstico Estructural</Eyebrow>
+          <h2 className="mt-4 font-heading text-3xl font-black leading-tight sm:text-4xl">
             La complejidad no debe ser una barrera para el crecimiento de tu organización.
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-text-muted">
+          <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-white/90">
             Cuéntanos sobre los cuellos de botella operativos de tu empresa. En menos de 24 horas propondremos un blueprint arquitectónico claro para resolverlos.
           </p>
           <a
             href={waLink("Hola Beeploy, buscamos escalar nuestra operación y necesitamos asesoría sobre infraestructura tecnológica.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-golden-pollen px-10 py-3 text-sm font-black text-text-main transition hover:bg-golden-hover"
+            className="mt-8 inline-flex min-h-12 items-center justify-center bg-golden-pollen px-10 py-3 text-sm font-black text-text-main transition-all duration-300 ease-in-out hover:scale-105 hover:bg-golden-hover"
           >
             Contactar al equipo de arquitectura →
           </a>
         </div>
-      </section>
-
+      </SectionShell>
     </main>
   );
 }

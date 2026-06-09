@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CameyappPlaceholder } from "@/components/visuals/cameyapp-placeholder";
+import { Eyebrow } from "@/components/ui/eyebrow";
 
 export const metadata: Metadata = {
   title: "Cameyapp en construccion",
@@ -14,23 +15,17 @@ export const metadata: Metadata = {
 
 export default function CameyappPage() {
   return (
-    <main
-      id="contenido"
-      className="relative isolate min-h-[calc(100vh-152px)] overflow-hidden px-6 py-16 sm:py-24"
-    >
-      <div className="technical-grid absolute inset-0 -z-10 opacity-70" />
+    <main id="contenido" className="section-light w-full px-6 py-24">
       <section className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
-        <div className="rounded-xl border border-text-main/10 bg-surface p-4 shadow-soft">
+        <div className="border border-text-main/10 bg-white p-4 shadow-[0_8px_30px_rgba(0,0,0,0.04)]">
           <CameyappPlaceholder />
         </div>
         <div>
-          <p className="mb-4 inline-flex rounded-full border border-golden-pollen/60 bg-golden-pollen/20 px-4 py-2 text-sm font-semibold text-text-main">
-            Cameyapp esta en obra
-          </p>
-          <h1 className="max-w-3xl font-heading text-4xl font-black leading-tight text-text-main sm:text-5xl lg:text-6xl">
+          <Eyebrow>Cameyapp en obra</Eyebrow>
+          <h1 className="mt-4 max-w-3xl font-heading text-4xl font-black leading-tight text-text-main sm:text-5xl lg:text-6xl">
             Nuestros arquitectos están construyendo el futuro del trabajo.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-text-muted">
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-text-muted">
             El equipo de Beeploy esta trabajando en una plataforma para que mas
             personas en Latinoamérica encuentren oportunidades reales, reputacion
             laboral y una forma digna de crecer.
@@ -38,7 +33,7 @@ export default function CameyappPage() {
 
           <Link
             href="/"
-            className="mt-8 inline-flex min-h-12 items-center rounded-full bg-text-main px-6 py-3 text-sm font-bold text-white transition hover:bg-golden-hover hover:text-text-main focus-visible:outline-text-main"
+            className="mt-8 inline-flex min-h-12 items-center bg-text-main px-6 py-3 text-sm font-bold text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-golden-hover hover:text-text-main focus-visible:outline-text-main"
           >
             Volver al Inicio
           </Link>

@@ -62,7 +62,7 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang="es" className={`scroll-smooth ${rubik.variable} ${inter.variable}`}>
-      <body className="bg-background font-body text-text-main antialiased honeycomb-bg">
+      <body className="section-light font-body text-text-main antialiased">
         <a
           href="#contenido"
           className="skip-link rounded-full bg-text-main px-4 py-3 text-sm font-semibold text-white shadow-soft"
