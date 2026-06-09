@@ -207,14 +207,16 @@ export default function ServiciosPage() {
 
       <section id="ciberseguridad" className="section-light w-full scroll-mt-24 px-6 py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-3xl">
+          <div className="w-full max-w-3xl">
             <Eyebrow>Ciberseguridad Resiliente</Eyebrow>
-            <h2 className="mt-3 font-heading text-3xl font-black leading-tight text-text-main sm:text-4xl">
-              Protegemos la continuidad y reputación de tu empresa.
-            </h2>
-            <p className="mt-4 text-lg leading-relaxed text-text-muted">
-              Una arquitectura de software no es confiable si es vulnerable. Un incidente de seguridad detiene operaciones y destruye confianza. Nosotros detectamos, analizamos y cerramos brechas estructurales antes de que representen un riesgo financiero.
-            </p>
+            <div className="mt-3 mb-10">
+              <h2 className="mt-3 font-heading text-3xl font-black leading-tight text-text-main sm:text-4xl">
+                Protegemos la continuidad y reputación de tu empresa.
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-text-muted">
+                Una arquitectura de software no es confiable si es vulnerable. Un incidente de seguridad detiene operaciones y destruye confianza. Nosotros detectamos, analizamos y cerramos brechas estructurales antes de que representen un riesgo financiero.
+              </p>
+            </div>
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -306,22 +308,29 @@ export default function ServiciosPage() {
           ))}
         </div>
 
-        <div className="mx-auto mt-20 max-w-3xl border-t border-white/10 pt-20 text-center">
-          <Eyebrow dark>Diagnóstico Estructural</Eyebrow>
-          <h2 className="mt-4 font-heading text-3xl font-black leading-tight sm:text-4xl">
-            La complejidad no debe ser una barrera para el crecimiento de tu organización.
-          </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-white/90">
-            Cuéntanos sobre los cuellos de botella operativos de tu empresa. En menos de 24 horas propondremos un blueprint arquitectónico claro para resolverlos.
-          </p>
-          <a
-            href={waLink("Hola Beeploy, buscamos escalar nuestra operación y necesitamos asesoría sobre infraestructura tecnológica.")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-flex min-h-12 items-center justify-center bg-golden-pollen px-10 py-3 text-sm font-black text-text-main transition-all duration-300 ease-in-out hover:scale-105 hover:bg-golden-hover"
-          >
-            Contactar al equipo de arquitectura →
-          </a>
+        <div className="mx-auto max-w-3xl">
+          <hr className="border-t border-white/10 my-12 md:my-16" />
+          <div className="w-full pt-8 text-center flex flex-col items-center">
+            <Eyebrow dark>Diagnóstico Estructural</Eyebrow>
+            <div className="mt-4 mb-8">
+              <h2 className="font-heading text-3xl font-black leading-tight sm:text-4xl text-balance">
+                La complejidad no debe ser una barrera para el crecimiento de tu organización.
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-white/90">
+                Cuéntanos sobre los cuellos de botella operativos de tu empresa. En menos de 24 horas propondremos un blueprint arquitectónico claro para resolverlos.
+              </p>
+            </div>
+          </div>
+          <div className="mt-8 flex justify-center">
+            <a
+              href={waLink("Hola Beeploy, buscamos escalar nuestra operación y necesitamos asesoría sobre infraestructura tecnológica.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 items-center justify-center bg-golden-pollen px-10 py-3 text-sm font-black text-text-main transition-all duration-300 ease-in-out hover:scale-105 hover:bg-golden-hover"
+            >
+              Contactar al equipo de arquitectura →
+            </a>
+          </div>
         </div>
       </SectionShell>
     </main>

@@ -12,7 +12,7 @@ export function TrustBar() {
   return (
     <section className="section-dark w-full px-6 py-24 text-white">
       <div className="mx-auto max-w-7xl">
-        <div className="mx-auto mb-10 max-w-3xl">
+        <div className="mb-10">
           <Eyebrow dark>Capacidades del Ecosistema</Eyebrow>
         </div>
         <div className="grid gap-6 sm:grid-cols-3">

@@ -68,7 +68,7 @@ export function Hero() {
           <h1 className="text-balance font-heading text-5xl font-black leading-[1.02] text-text-main sm:text-6xl lg:text-7xl">
             Arquitectura digital que convierte complejidad en crecimiento.
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-text-muted">
+          <p className="mr-auto ml-0 mt-6 max-w-3xl text-lg leading-relaxed text-text-muted">
             No somos una fábrica de software que opera por inercia. Diseñamos e implementamos infraestructura tecnológica modular, automatizamos flujos operativos y garantizamos la seguridad de tu información para que escales con autonomía técnica.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">

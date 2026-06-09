@@ -219,15 +219,17 @@ export default function NosotrosPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.78fr_1.22fr]">
           <aside className="lg:sticky lg:top-28 lg:h-fit">
             <Eyebrow dark>Tensión y Origen</Eyebrow>
-            <h2 className="mt-4 text-balance font-heading text-3xl font-black leading-tight sm:text-5xl">
-              Invertir el paradigma de la adopción tecnológica.
-            </h2>
-            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/90">
-              Toda empresa líder surge al identificar un problema sistémico.
-              Nuestra meta es erradicar el aislamiento tecnológico de las
-              organizaciones y dotarlas de la misma potencia arquitectónica que
-              poseen las grandes corporaciones.
-            </p>
+            <div className="w-full max-w-3xl text-left md:text-left mt-4">
+              <h2 className="text-balance font-heading text-3xl font-black leading-tight sm:text-5xl">
+                Invertir el paradigma de la adopción tecnológica.
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-white/90">
+                Toda empresa líder surge al identificar un problema sistémico.
+                Nuestra meta es erradicar el aislamiento tecnológico de las
+                organizaciones y dotarlas de la misma potencia arquitectónica que
+                poseen las grandes corporaciones.
+              </p>
+            </div>
           </aside>
           <div className="grid gap-5">
             {originBlocks.map((block) => (
@@ -256,16 +258,18 @@ export default function NosotrosPage() {
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div className="lg:sticky lg:top-32 lg:h-fit">
               <Eyebrow>Filosofía de Ingeniería</Eyebrow>
-              <h2 className="mt-4 text-balance font-heading text-3xl font-black leading-tight text-text-main sm:text-5xl">
-                Inspiración natural, ejecución técnica rigurosa.
-              </h2>
-              <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-text-muted">
-                La abeja melipona es nativa, no posee aguijón, construye panales
-                eficientes y actúa mediante inteligencia colectiva. Beeploy
-                interioriza estos atributos biológicos como principios
-                fundacionales para desarrollar software modular, resiliente y
-                colaborativo.
-              </p>
+              <div className="w-full max-w-3xl text-left md:text-left mt-4">
+                <h2 className="text-balance font-heading text-3xl font-black leading-tight text-text-main sm:text-5xl">
+                  Inspiración natural, ejecución técnica rigurosa.
+                </h2>
+                <p className="mt-6 text-lg leading-relaxed text-text-muted">
+                  La abeja melipona es nativa, no posee aguijón, construye panales
+                  eficientes y actúa mediante inteligencia colectiva. Beeploy
+                  interioriza estos atributos biológicos como principios
+                  fundacionales para desarrollar software modular, resiliente y
+                  colaborativo.
+                </p>
+              </div>
             </div>
             <div className="grid gap-5 md:grid-cols-2">
               {meliponaInsights.map((item) => (
@@ -302,23 +306,25 @@ export default function NosotrosPage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_0.86fr] lg:items-center">
             <div>
               <Eyebrow dark>Visión Estratégica</Eyebrow>
-              <h2 className="mt-4 text-balance font-heading text-3xl font-black leading-tight sm:text-5xl">
-                Mientras otros venden proyectos aislados, nosotros construimos
-                ecosistemas corporativos.
-              </h2>
-              <div className="mx-auto mt-6 max-w-3xl space-y-5">
-                <p className="text-lg leading-relaxed text-white/90">
-                  No somos una fábrica de software ni una agencia superficial.
-                  Somos el arquitecto de tu transformación digital. Abordamos
-                  cada reto desde el núcleo: qué fricción afecta tus márgenes,
-                  qué proceso ineficiente lastra a tu equipo operativo y cómo
-                  los datos pueden revelar el próximo paso a dar.
-                </p>
-                <p className="text-lg leading-relaxed text-white/90">
-                  Hablamos de adopción, seguridad y retorno porque comprendemos
-                  que el código es solo la infraestructura; la autonomía
-                  comercial es el verdadero objetivo.
-                </p>
+              <div className="w-full max-w-3xl text-left md:text-left mt-4">
+                <h2 className="text-balance font-heading text-3xl font-black leading-tight sm:text-5xl">
+                  Mientras otros venden proyectos aislados, nosotros construimos
+                  ecosistemas corporativos.
+                </h2>
+                <div className="mt-6 space-y-5">
+                  <p className="text-lg leading-relaxed text-white/90">
+                    No somos una fábrica de software ni una agencia superficial.
+                    Somos el arquitecto de tu transformación digital. Abordamos
+                    cada reto desde el núcleo: qué fricción afecta tus márgenes,
+                    qué proceso ineficiente lastra a tu equipo operativo y cómo
+                    los datos pueden revelar el próximo paso a dar.
+                  </p>
+                  <p className="text-lg leading-relaxed text-white/90">
+                    Hablamos de adopción, seguridad y retorno porque comprendemos
+                    que el código es solo la infraestructura; la autonomía
+                    comercial es el verdadero objetivo.
+                  </p>
+                </div>
               </div>
             </div>
             <div className="border border-white/10 bg-white/5 p-8">
@@ -350,16 +356,20 @@ export default function NosotrosPage() {
       {/* 5 · Clara */}
       <section className="section-light w-full px-6 py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-3xl">
-            <Eyebrow>Metodología Beeploy</Eyebrow>
-            <h2 className="mt-4 text-balance font-heading text-3xl font-black leading-tight text-text-main sm:text-5xl">
-              De la auditoría operativa al crecimiento tangible.
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-text-muted">
-              Un despliegue tecnológico sin método se convierte en deuda
-              técnica. Nuestro framework asegura que cada decisión arquitectónica
-              resuelva un cuello de botella real de tu operación.
-            </p>
+          <div>
+            <div className="w-full max-w-3xl">
+              <Eyebrow>Metodología Beeploy</Eyebrow>
+              <div className="mt-4 mb-10">
+                <h2 className="text-balance font-heading text-3xl font-black leading-tight text-text-main sm:text-5xl">
+                  De la auditoría operativa al crecimiento tangible.
+                </h2>
+                <p className="mt-6 text-lg leading-relaxed text-text-muted">
+                  Un despliegue tecnológico sin método se convierte en deuda
+                  técnica. Nuestro framework asegura que cada decisión arquitectónica
+                  resuelva un cuello de botella real de tu operación.
+                </p>
+              </div>
+            </div>
           </div>
           <ol className="mt-12 grid gap-5 lg:grid-cols-5">
             {frameworkSteps.map((step, index) => (
@@ -388,16 +398,18 @@ export default function NosotrosPage() {
           <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
             <div>
               <Eyebrow dark>Lenguaje corporativo</Eyebrow>
-              <h2 className="mt-4 text-balance font-heading text-3xl font-black leading-tight sm:text-5xl">
-                Arquitectos para diseñar, expertos para asesorar, aliados para
-                escalar.
-              </h2>
-              <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/90">
-                Comunicamos la complejidad tecnológica con total transparencia.
-                Evitamos condescendencia técnica para integrar al liderazgo de la
-                empresa en el control y visión del sistema que estamos
-                construyendo.
-              </p>
+              <div className="w-full max-w-3xl text-left md:text-left mt-4">
+                <h2 className="text-balance font-heading text-3xl font-black leading-tight sm:text-5xl">
+                  Arquitectos para diseñar, expertos para asesorar, aliados para
+                  escalar.
+                </h2>
+                <p className="mt-6 text-lg leading-relaxed text-white/90">
+                  Comunicamos la complejidad tecnológica con total transparencia.
+                  Evitamos condescendencia técnica para integrar al liderazgo de la
+                  empresa en el control y visión del sistema que estamos
+                  construyendo.
+                </p>
+              </div>
             </div>
             <div className="grid gap-5 md:grid-cols-2">
               {principles.map((principle) => (
@@ -431,16 +443,14 @@ export default function NosotrosPage() {
       {/* 7 · Clara */}
       <section className="section-light w-full px-6 py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-10 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <Eyebrow>Impacto Estructural</Eyebrow>
-              <h2 className="mt-3 text-balance font-heading text-3xl font-black leading-tight text-text-main sm:text-4xl">
-                Una infraestructura,{" "}
-                <br className="hidden sm:block" />
-                múltiples resultados estratégicos.
-              </h2>
-            </div>
-            <p className="mx-auto max-w-3xl text-base leading-relaxed text-text-muted lg:text-right">
+          <div className="mb-10">
+            <Eyebrow>Impacto Estructural</Eyebrow>
+            <h2 className="mt-3 text-balance font-heading text-3xl font-black leading-tight text-text-main sm:text-4xl">
+              Una infraestructura,{" "}
+              <br className="hidden sm:block" />
+              múltiples resultados estratégicos.
+            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-text-muted">
               Cada perfil de liderazgo obtiene resultados concretos desde una
               sola plataforma.
             </p>
@@ -522,27 +532,30 @@ export default function NosotrosPage() {
             </div>
           </div>
 
-          <div className="mx-auto mt-20 max-w-4xl border-t border-white/10 pt-20 text-center">
-            <Eyebrow dark>Compromiso Social Tecnológico</Eyebrow>
-            <h2 className="mt-4 font-heading text-3xl font-black leading-tight sm:text-5xl">
-              Tu inversión tecnológica también edifica infraestructuras de
-              equidad.
-            </h2>
-            <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-white/90">
-              Cameyapp es el brazo de visibilidad e inclusión de nuestro
-              ecosistema corporativo. Al implementar soluciones empresariales con
-              Beeploy, permites que continuemos expandiendo la plataforma
-              tecnológica que conecta el talento latinoamericano con
-              oportunidades reales de empleo digno.
-            </p>
-            <a
-              href="https://wa.me/593997963617?text=Hola%20equipo%20de%20Beeploy.%20Me%20interesa%20iniciar%20un%20diagn%C3%B3stico%20estructural."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-10 inline-flex min-h-12 items-center justify-center bg-golden-pollen px-8 py-3 text-sm font-black text-text-main transition-all duration-300 ease-in-out hover:scale-105 hover:bg-golden-hover"
-            >
-              Agendar diagnóstico estructural
-            </a>
+          <div className="mx-auto max-w-4xl">
+            <hr className="border-t border-white/10 my-12 md:my-16" />
+            <div className="text-center flex flex-col items-center pt-8">
+              <Eyebrow dark>Compromiso Social Tecnológico</Eyebrow>
+              <h2 className="mt-4 font-heading text-3xl font-black leading-tight sm:text-5xl text-balance">
+                Tu inversión tecnológica también edifica infraestructuras de
+                equidad.
+              </h2>
+              <p className="mt-8 max-w-3xl text-lg leading-relaxed text-white/90">
+                Cameyapp es el brazo de visibilidad e inclusión de nuestro
+                ecosistema corporativo. Al implementar soluciones empresariales con
+                Beeploy, permites que continuemos expandiendo la plataforma
+                tecnológica que conecta el talento latinoamericano con
+                oportunidades reales de empleo digno.
+              </p>
+              <a
+                href="https://wa.me/593997963617?text=Hola%20equipo%20de%20Beeploy.%20Me%20interesa%20iniciar%20un%20diagn%C3%B3stico%20estructural."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-10 inline-flex min-h-12 items-center justify-center bg-golden-pollen px-8 py-3 text-sm font-black text-text-main transition-all duration-300 ease-in-out hover:scale-105 hover:bg-golden-hover"
+              >
+                Agendar diagnóstico estructural
+              </a>
+            </div>
           </div>
         </div>
       </section>

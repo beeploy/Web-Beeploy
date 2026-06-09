@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     siteName: "Beeploy",
     images: [
       {
-        url: "/banner-beeploy.png",
-        width: 1200,
-        height: 630,
-        alt: "Beeploy Banner Corporativo",
+        url: "/banner-beeploy-v2.png",
+        width: 3523,
+        height: 1035,
+        alt: "Beeploy — logo sobre fondo negro",
       },
     ],
     locale: "es_EC",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Beeploy | Tecnología de Élite",
     description: "Sistemas a la medida, IA y Ciberseguridad para empresas.",
-    images: ["/banner-beeploy.png"],
+    images: ["/banner-beeploy-v2.png"],
   },
   robots: {
     index: true,

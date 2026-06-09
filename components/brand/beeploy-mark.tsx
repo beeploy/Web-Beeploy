@@ -8,11 +8,12 @@ export function BeeployMark({ inverse = false }: BeeployMarkProps) {
   return (
     <span className="inline-flex items-center" aria-label="Beeploy">
       <Image
-        src="/logo-beeploy.svg"
+        src="/logo-beeploy-rounded-v3.png"
         alt="Beeploy Logo"
         width={150}
         height={45}
-        className={`object-contain ${inverse ? "brightness-0 invert" : ""}`}
+        unoptimized
+        className={`object-contain ${inverse ? "brightness-0 invert" : "brightness-0"}`}
         priority
       />
     </span>
