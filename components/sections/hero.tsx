@@ -30,12 +30,12 @@ export function Hero() {
         {/* Elemento visual: abeja geométrica — derecha */}
         <div className="flex flex-shrink-0 items-center justify-center lg:justify-end">
           <Image
-            src="/logo-beeploy.svg"
-            alt="Beeploy Logo"
+            src="/bee-geometric-rounded-v1.svg"
+            alt="Abeja geométrica Beeploy"
             width={520}
             height={520}
             priority
-            className="w-[380px] sm:w-[500px] md:w-[700px] lg:w-[860px] h-auto -scale-x-100 drop-shadow-[0_8px_32px_rgba(217,119,6,0.18)]"
+            className="w-[440px] sm:w-[580px] md:w-[800px] lg:w-[980px] h-auto -scale-x-100 drop-shadow-[0_8px_32px_rgba(217,119,6,0.18)]"
           />
         </div>
       </div>
