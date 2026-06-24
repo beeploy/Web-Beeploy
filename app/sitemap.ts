@@ -5,6 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://beeploy.netlify.app',
       lastModified: new Date(),
+      changeFrequency: 'weekly',
       priority: 1.0,
     },
   ];

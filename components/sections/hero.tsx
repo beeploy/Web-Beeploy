@@ -35,6 +35,8 @@ export function Hero() {
             width={520}
             height={520}
             priority
+            fetchPriority="high"
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="w-[440px] sm:w-[580px] md:w-[800px] lg:w-[980px] h-auto -scale-x-100 drop-shadow-[0_8px_32px_rgba(217,119,6,0.18)]"
           />
         </div>
