@@ -36,9 +36,9 @@ export function MethodTimeline() {
             <div className="mb-2 inline-flex items-center justify-center bg-golden-pollen px-3 py-1 text-xs font-black uppercase tracking-widest text-text-main">
               Fase 0{index + 1}
             </div>
-            <h3 className="mt-4 min-h-[64px] font-heading text-2xl font-black text-white">
+            <p className="mt-4 min-h-[64px] font-heading text-xl font-bold text-white">
               {step.title}
-            </h3>
+            </p>
             <p className="mx-auto mt-4 max-w-3xl leading-relaxed text-white/85">
               {step.body}
             </p>

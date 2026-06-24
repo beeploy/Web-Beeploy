@@ -50,9 +50,9 @@ export function ServicePillars(): JSX.Element {
               </span>
             </div>
             <div className="relative z-10 mb-6 flex min-h-[40px] items-center">
-              <h3 className="font-heading text-2xl font-black text-text-main">
+              <p className="font-heading text-xl font-bold text-text-main">
                 {service.title}
-              </h3>
+              </p>
             </div>
             <div className="relative z-10 flex flex-1 flex-col">
               <p className="mx-auto max-w-3xl font-sans text-base font-medium leading-relaxed text-text-main/90">

@@ -24,14 +24,14 @@ export function SectionShell({
   return (
     <section
       id={id}
-      className={`w-full px-6 py-24 ${isDark ? "section-dark text-white" : "section-light"} ${className}`}
+      className={`w-full px-4 sm:px-6 lg:px-8 py-24 ${isDark ? "section-dark text-white" : "section-light"} ${className}`}
     >
       <div className="mx-auto max-w-7xl">
         <div className="w-full max-w-3xl">
           {eyebrow ? <Eyebrow dark={isDark}>{eyebrow}</Eyebrow> : null}
           <div className="mt-4 mb-10">
             <h2
-              className={`text-left font-heading text-3xl font-black leading-tight sm:text-4xl ${
+              className={`text-left text-balance font-heading text-3xl font-black leading-tight sm:text-4xl ${
                 isDark ? "text-white" : "text-text-main"
               }`}
             >

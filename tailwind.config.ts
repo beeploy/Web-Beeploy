@@ -22,6 +22,15 @@ const config: Config = {
       boxShadow: {
         soft: "0 18px 60px rgba(26, 26, 26, 0.08)",
       },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' }
+        }
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.4s ease-out forwards'
+      }
     },
   },
   plugins: [],

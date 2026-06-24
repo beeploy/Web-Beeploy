@@ -39,9 +39,11 @@ export default function Home() {
       <FitSignals />
       <PrinciplesSection />
       <MethodologyManifesto />
-      <section className="section-dark w-full px-6 py-24 text-white">
-        <PurposeBridge />
-        <FinalCta />
+      <section className="section-dark w-full px-4 sm:px-6 lg:px-8 py-24 text-white">
+        <div className="mx-auto max-w-7xl">
+          <PurposeBridge />
+          <FinalCta />
+        </div>
       </section>
     </main>
   );

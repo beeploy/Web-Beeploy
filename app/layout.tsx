@@ -4,6 +4,7 @@ import "./globals.css";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { ReactNode, JSX } from "react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -63,6 +64,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={`scroll-smooth ${rubik.variable} ${inter.variable}`}>
       <body className="section-light font-body text-text-main antialiased">
+        <GoogleAnalytics gaId="G-GGMDHT7EXL" />
         <a
           href="#contenido"
           className="skip-link rounded-full bg-text-main px-4 py-3 text-sm font-semibold text-white shadow-soft"
@@ -90,6 +92,7 @@ export default function RootLayout({
                 "addressRegion": "Guayas",
                 "addressCountry": "EC"
               },
+              "image": "https://beeploy.netlify.app/logo-beeploy-rounded-final.png",
               "areaServed": "Guayaquil",
               "priceRange": "$$"
             })

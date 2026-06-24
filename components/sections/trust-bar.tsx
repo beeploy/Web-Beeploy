@@ -10,7 +10,7 @@ const items = [
 
 export function TrustBar() {
   return (
-    <section className="section-dark w-full px-6 py-24 text-white">
+    <section className="section-dark w-full px-4 sm:px-6 lg:px-8 py-24 text-white">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10">
           <Eyebrow dark>Capacidades del Ecosistema</Eyebrow>
@@ -29,9 +29,9 @@ export function TrustBar() {
                     <div className="absolute inset-x-0 bottom-0 h-[40%] pointer-events-none bg-gradient-to-t from-amber-800/35 to-transparent" />
                     <Icon className="relative z-10 size-6 text-amber-950" />
                   </div>
-                  <h3 className="font-heading text-xl font-black leading-tight">
+                  <p className="font-heading text-xl font-bold leading-tight">
                     {item.text}
-                  </h3>
+                  </p>
                 </div>
                 <p className="mx-auto mt-2 max-w-3xl text-sm font-medium leading-relaxed text-white/85">
                   {item.desc}

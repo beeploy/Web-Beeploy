@@ -18,9 +18,9 @@ export function MethodologyManifesto() {
               <div className="absolute inset-x-0 bottom-0 h-[40%] pointer-events-none bg-gradient-to-t from-amber-800/35 to-transparent" />
               <RefreshCcw className="relative z-10 size-6 text-amber-950" />
             </div>
-            <h3 className="font-heading text-2xl font-black text-text-main">
+            <p className="font-heading text-xl font-bold text-text-main">
               Sincronización Transparente
-            </h3>
+            </p>
           </div>
           <p className="mx-auto max-w-3xl leading-relaxed text-text-muted">
             Ejecutamos implementaciones con un paralelismo biológico a la colmena. Coordinamos módulos complejos en tiempo real sin saturar a los líderes del proyecto. Desplegamos versiones continuas, con hitos verificables y entregas limpias para anular la especulación y el riesgo del mercado.
@@ -34,9 +34,9 @@ export function MethodologyManifesto() {
               <div className="absolute inset-x-0 bottom-0 h-[40%] pointer-events-none bg-gradient-to-t from-amber-800/35 to-transparent" />
               <Hexagon className="relative z-10 size-6 text-amber-950" />
             </div>
-            <h3 className="font-heading text-2xl font-black text-text-main">
+            <p className="font-heading text-xl font-bold text-text-main">
               Arquitectura Hexagonal (Modularidad)
-            </h3>
+            </p>
           </div>
           <p className="mx-auto max-w-3xl leading-relaxed text-text-muted">
             Nuestros desarrollos no se limitan a funcionar temporalmente. Construimos el código alrededor de un patrón de puertos y adaptadores: separando el núcleo vital de tu negocio de factores externos (como bases de datos e interfaces). Así blindamos tu inversión contra la obsolescencia técnica inminente.

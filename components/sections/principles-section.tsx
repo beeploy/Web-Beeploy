@@ -37,9 +37,9 @@ export function PrinciplesSection() {
               <div className="inline-flex size-10 shrink-0 items-center justify-center hexagon bg-golden-pollen text-sm font-black text-text-main">
                 0{index + 1}
               </div>
-              <h3 className="font-heading text-xl font-black leading-tight text-white">
+              <p className="font-heading text-xl font-bold leading-tight text-white">
                 {principle.title}
-              </h3>
+              </p>
             </div>
             <p className="mx-auto mt-2 max-w-3xl text-sm font-medium leading-relaxed text-white/85">
               {principle.desc}

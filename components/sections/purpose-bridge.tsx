@@ -22,7 +22,7 @@ export function PurposeBridge() {
           </p>
           <div>
             <ButtonLink href="/cameyapp" variant="gold">
-              Conocer la Trascendencia de Cameyapp
+              Ver Manifiesto
             </ButtonLink>
           </div>
         </div>

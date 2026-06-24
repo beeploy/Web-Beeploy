@@ -4,7 +4,7 @@ import { SectionBadge } from "@/components/ui/eyebrow";
 
 export function Hero() {
   return (
-    <section className="section-light page-intro w-full px-6 py-16 sm:py-20">
+    <section className="section-light page-intro w-full px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1fr_0.92fr]">
         {/* Bloque de texto: izquierda */}
         <div className="relative z-10 max-w-3xl">
@@ -15,7 +15,7 @@ export function Hero() {
             Arquitectura digital que convierte complejidad en crecimiento.
           </h1>
           <p className="mr-auto ml-0 mt-6 max-w-3xl text-lg leading-relaxed text-text-muted">
-            No somos una fábrica de software que opera por inercia. Diseñamos e implementamos infraestructura tecnológica modular, automatizamos flujos operativos y garantizamos la seguridad de tu información para que escales con autonomía técnica.
+            Transformamos la complejidad digital en ecosistemas B2B seguros y escalables. Integramos desarrollo de software a medida, automatización inteligente, ciberseguridad corporativa y estrategias de posicionamiento de marca para potenciar tu arquitectura web.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <ButtonLink href="/servicios" variant="gold">
@@ -28,14 +28,14 @@ export function Hero() {
         </div>
 
         {/* Elemento visual: abeja geométrica — derecha */}
-        <div className="flex items-center justify-center lg:justify-end">
+        <div className="flex flex-shrink-0 items-center justify-center lg:justify-end">
           <Image
-            src="/bee-geometric-rounded-v1.svg"
-            alt="Abeja geométrica Beeploy"
-            width={420}
-            height={420}
+            src="/logo-beeploy.svg"
+            alt="Beeploy Logo"
+            width={520}
+            height={520}
             priority
-            className="w-[340px] sm:w-[420px] md:w-[540px] lg:w-[680px] h-auto -scale-x-100 drop-shadow-[0_8px_32px_rgba(217,119,6,0.18)]"
+            className="w-[380px] sm:w-[500px] md:w-[700px] lg:w-[860px] h-auto -scale-x-100 drop-shadow-[0_8px_32px_rgba(217,119,6,0.18)]"
           />
         </div>
       </div>

@@ -21,13 +21,13 @@ export function SiteHeader(): JSX.Element {
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
       }
-      
+
       lastScrollY = currentScrollY;
     };
 
@@ -45,14 +45,13 @@ export function SiteHeader(): JSX.Element {
   }, [isMobileMenuOpen]);
 
   return (
-    <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out bg-white/70 backdrop-blur-md border-b border-neutral-100 shadow-sm ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
-      }`}
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out bg-white/70 backdrop-blur-md border-b border-neutral-100 shadow-sm ${isVisible ? "translate-y-0" : "-translate-y-full"
+        }`}
     >
-      <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-4 px-6 relative z-50 bg-transparent">
-        <Link 
-          href="/" 
+      <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-4 px-6 relative z-[60] bg-transparent">
+        <Link
+          href="/"
           aria-label="Ir al inicio de Beeploy"
           onClick={() => setIsMobileMenuOpen(false)}
         >
@@ -94,7 +93,7 @@ export function SiteHeader(): JSX.Element {
 
       {/* Menú Móvil / Drawer */}
       {isMobileMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-[#FFFCF8] shadow-2xl border-b border-neutral-200 z-50 flex flex-col p-6 gap-6 md:hidden">
+        <div className="absolute top-full left-0 w-full h-auto bg-background border-b shadow-2xl flex flex-col p-6 gap-6 z-50 md:hidden">
           {navItems.map((item) => (
             <Link
               key={item.href}
