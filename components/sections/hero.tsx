@@ -12,10 +12,10 @@ export function Hero() {
             <SectionBadge>Ecosistema Tecnológico B2B</SectionBadge>
           </div>
           <h1 className="text-balance font-heading text-5xl font-black leading-[1.02] text-text-main sm:text-6xl lg:text-7xl">
-            Arquitectura digital que convierte complejidad en crecimiento.
+            Empresa de Desarrollo de Software a la Medida
           </h1>
           <p className="mr-auto ml-0 mt-6 max-w-3xl text-lg leading-relaxed text-text-muted">
-            Transformamos la complejidad digital en ecosistemas B2B seguros y escalables. Integramos desarrollo de software a medida, automatización inteligente, ciberseguridad corporativa y estrategias de posicionamiento de marca para potenciar tu arquitectura web.
+            Transformamos la complejidad digital en ecosistemas B2B seguros y escalables. Somos una empresa de desarrollo de software a medida que integra inteligencia artificial, ciberseguridad y estrategias de marca para potenciar tu arquitectura web.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <ButtonLink href="/servicios" variant="gold">
