@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://beeploy.netlify.app"),
+  metadataBase: new URL("https://beeploy.com.ec"),
   alternates: {
     canonical: '/',
   },
@@ -83,7 +83,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Beeploy",
-              "url": "https://beeploy.netlify.app",
+              "url": "https://beeploy.com.ec",
               "description": "Desarrollo de software a la medida, automatizaciones con IA y ciberseguridad corporativa en Guayaquil, Ecuador.",
               "telephone": "+593997963617",
               "address": {
@@ -92,7 +92,7 @@ export default function RootLayout({
                 "addressRegion": "Guayas",
                 "addressCountry": "EC"
               },
-              "image": "https://beeploy.netlify.app/logo-beeploy-rounded-final.png",
+              "image": "https://beeploy.com.ec/logo-beeploy-rounded-final.png",
               "areaServed": "Guayaquil",
               "priceRange": "$$"
             })
